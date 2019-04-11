@@ -1,0 +1,16 @@
+#include <inttypes.h>
+#define LED1_ADDR 0x40050000
+#define LED2_ADDR 0x40050004
+
+int main()
+{
+
+	uint32_t* light1 = (uint32_t*)LED1_ADDR;
+	uint32_t* light2 = (uint32_t*)LED2_ADDR;
+	while(1){
+		*light1 = 0xff0000;
+		*light2 = 0x00ff00;
+
+	}
+	return 0;
+}

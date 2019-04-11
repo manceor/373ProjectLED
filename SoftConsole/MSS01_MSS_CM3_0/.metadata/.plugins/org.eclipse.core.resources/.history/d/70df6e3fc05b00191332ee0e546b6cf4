@@ -1,0 +1,33 @@
+#include <inttypes.h>
+#define LED1_ADDR 0x40050000
+#define LED2_ADDR 0x40050004
+#define LED3_ADDR 0x40050008
+#define LED4_ADDR 0x4005000c
+#define LED5_ADDR 0x40050010
+#define LED6_ADDR 0x40050014
+#define LED7_ADDR 0x40050018
+#define LED8_ADDR 0x4005001c
+int main()
+{
+	uint32_t* LED1 = (uint32_t*)LED1_ADDR;
+	uint32_t* LED2 = (uint32_t*)LED2_ADDR;
+	uint32_t* LED3 = (uint32_t*)LED3_ADDR;
+	uint32_t* LED4 = (uint32_t*)LED4_ADDR;
+	uint32_t* LED5 = (uint32_t*)LED5_ADDR;
+	uint32_t* LED6 = (uint32_t*)LED6_ADDR;
+	uint32_t* LED7 = (uint32_t*)LED7_ADDR;
+	uint32_t* LED8 = (uint32_t*)LED8_ADDR;
+	while(1){
+	*LED1 = 0xff0000;
+	*LED2 = 0x00ffff;
+	*LED3 = 0xff0000;
+	*LED4 = 0x00ffff;
+	*LED5 = 0xff0000;
+	*LED6 = 0x00ffff;
+	*LED7 = 0xff0000;
+	*LED8 = 0x00ffff;
+
+
+	}
+	return 0;
+}

@@ -1,0 +1,21 @@
+#include <inttypes.h>
+#define LED_ADDR 0x40050000
+
+
+int main()
+{
+	while(1){
+	uint32_t* light = (uint32_t*)LED_ADDR;
+
+		*light = 0x00ff00;
+		light++;
+		*light = 0xff0000;
+		light++;
+		*light = 0x0000ff;
+		light++;
+		*light = 0x00ffff;
+
+
+	}
+	return 0;
+}

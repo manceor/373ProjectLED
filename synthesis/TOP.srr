@@ -1,0 +1,1776 @@
+#Build: Synplify Pro L-2016.09M-SP1-5, Build 264R, Oct 26 2017
+#install: C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: EECS373-11
+
+# Thu Apr 11 17:11:57 2019
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q4p1, Build 517R, built Oct 30 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" (library work)
+@I::"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v" (library work)
+@I::"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\mss_tshell.v" (library work)
+@I::"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS01.v" (library work)
+@I::"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" (library COREAPB3_LIB)
+@I::"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
+@I::"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
+@I::"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v" (library work)
+@I::"C:\Users\mmanceor\Downloads\LED\LED\component\work\TOP\TOP.v" (library work)
+Verilog syntax check successful!
+File C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v changed - recompiling
+Selecting top level module TOP
+@W: CG775 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
+
+@N: CG364 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b001100
+	UPR_NIBBLE_POSN=4'b0010
+	FAMILY=32'b00000000000000000000000000010010
+	SYNC_RESET=32'b00000000000000000000000000000000
+	CAPB3OOl=32'b00000000000000000000000000000000
+	CAPB3IOl=32'b00000000000000000000000000000001
+	CAPB3lOl=32'b00000000000000000000000000000010
+	CAPB3OIl=32'b00000000000000000000000000000011
+	CAPB3IIl=32'b00000000000000000000000000000100
+	CAPB3lIl=32'b00000000000000000000000000000101
+	CAPB3Oll=32'b00000000000000000000000000000110
+	CAPB3Ill=32'b00000000000000000000000000000111
+	CAPB3lll=32'b00000000000000000000000000001000
+	CAPB3O0l=32'b00000000000000000000000000001001
+	CAPB3I0l=32'b00000000000000000000000000001010
+	CAPB3l0l=32'b00000000000000000000000000001011
+	CAPB3O1l=32'b00000000000000000000000000001100
+	CAPB3I1l=32'b00000000000000000000000000001101
+	CAPB3l1l=32'b00000000000000000000000000001110
+	CAPB3OO0=32'b00000000000000000000000000001111
+	CAPB3IO0=32'b00000000000000000000000000010000
+	CAPB3lO0=32'b00000000000000000000000000010001
+	CAPB3OI0=16'b0000000000000001
+	CAPB3II0=16'b0000000000000000
+	CAPB3lI0=16'b0000000000000000
+	CAPB3Ol0=16'b0000000000000000
+	CAPB3Il0=16'b0000000000000000
+	CAPB3ll0=16'b0000000000000000
+	CAPB3O00=16'b0000000000000000
+	CAPB3I00=16'b0000000000000000
+	CAPB3l00=16'b0000000000000000
+	CAPB3O10=16'b0000000000000000
+	CAPB3I10=16'b0000000000000000
+	CAPB3l10=16'b0000000000000000
+	CAPB3OO1=16'b0000000000000000
+	CAPB3IO1=16'b0000000000000000
+	CAPB3lO1=16'b0000000000000000
+	CAPB3OI1=16'b0000000000000000
+	CAPB3II1=16'b0000000000000000
+	CAPB3lI1=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+
+@W: CG360 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|Removing wire CAPB3IlOI, as there is no assignment to it.
+@N: CG364 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":1:7:1:17|Synthesizing module LED_VERILOG in library work.
+
+@W: CG133 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":12:18:12:23|Object PRDATA is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 192 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 193 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 194 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 195 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 196 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 197 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 198 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 199 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 200 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 201 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 202 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 203 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 204 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 205 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 206 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 207 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 208 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 209 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 210 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 211 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 212 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 213 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 214 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 215 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 216 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 217 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 218 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 219 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 220 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 221 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 222 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 223 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 224 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 225 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 226 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 227 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 228 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 229 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 230 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 231 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 232 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 233 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 234 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 235 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 236 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 237 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 238 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 239 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 240 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 241 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 242 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 243 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 244 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 245 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 246 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 247 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 248 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 249 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 250 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 251 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 252 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 253 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 254 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 255 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 256 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 257 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 258 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 259 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 260 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 261 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 262 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 263 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 264 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 265 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 266 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 267 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 268 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 269 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 270 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 271 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 272 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 273 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 274 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 275 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 276 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 277 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 278 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 279 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 280 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 281 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 282 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 283 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 284 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 285 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 286 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 287 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 288 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 289 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 290 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 291 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 292 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 293 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 294 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 295 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 296 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 297 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 298 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 299 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 300 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 301 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 302 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 303 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 304 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 305 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 306 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 307 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 308 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 309 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 310 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 311 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 312 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 313 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 314 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 315 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 316 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 317 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 318 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 319 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 320 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 321 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 322 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 323 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 324 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 325 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 326 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 327 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 328 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 329 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 330 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 331 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 332 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 333 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 334 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 335 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 336 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 337 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 338 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 339 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 340 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 341 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 342 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 343 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 344 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 345 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 346 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 347 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 348 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 349 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 350 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 351 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 352 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 353 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 354 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 355 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 356 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 357 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 358 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 359 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 360 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 361 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 362 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 363 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 364 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 365 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 366 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 367 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 368 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 369 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 370 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 371 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 372 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 373 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 374 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 375 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 376 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 377 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 378 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 379 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 380 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 381 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 382 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 383 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 384 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 385 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 386 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 387 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 388 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 389 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 390 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 391 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 392 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 393 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 394 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 395 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 396 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 397 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 398 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 399 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 400 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 401 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 402 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 403 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 404 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 405 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 406 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 407 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 408 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 409 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 410 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 411 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 412 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 413 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 414 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 415 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 416 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 417 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 418 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 419 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 420 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 421 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 422 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 423 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 424 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 425 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 426 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 427 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 428 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 429 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 430 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 431 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 432 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 433 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 434 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 435 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 436 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 437 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 438 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 439 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 440 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 441 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 442 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 443 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 444 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 445 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 446 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 447 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 448 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 449 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 450 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 451 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 452 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 453 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 454 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 455 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 456 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 457 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 458 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 459 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 460 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 461 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 462 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 463 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 464 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 465 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 466 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 467 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 468 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 469 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 470 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 471 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 472 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 473 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 474 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 475 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 476 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 477 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 478 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 479 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 480 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 481 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 482 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 483 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 484 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 485 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 486 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 487 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 488 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 489 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 490 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 491 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 492 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 493 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 494 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 495 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 496 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 497 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 498 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 499 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 500 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 501 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 502 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 503 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 504 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 505 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 506 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 507 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 508 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 509 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 510 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 511 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 512 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 513 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 514 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 515 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 516 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 517 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 518 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 519 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 520 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 521 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 522 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 523 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 524 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 525 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 526 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 527 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 528 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 529 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 530 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 531 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 532 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 533 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 534 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 535 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 536 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 537 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 538 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 539 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 540 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 541 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 542 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 543 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 544 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 545 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 546 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 547 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 548 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 549 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 550 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 551 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 552 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 553 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 554 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 555 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 556 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 557 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 558 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 559 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 560 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 561 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 562 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 563 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 564 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 565 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 566 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 567 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 568 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 569 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 570 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 571 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 572 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 573 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 574 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 575 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 576 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 577 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 578 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 579 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 580 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 581 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 582 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 583 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 584 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 585 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 586 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 587 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 588 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 589 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 590 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 591 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 592 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 593 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 594 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 595 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 596 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 597 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 598 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 599 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 600 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 601 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 602 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 603 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 604 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 605 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 606 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 607 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 608 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 609 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 610 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 611 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 612 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 613 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 614 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 615 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 616 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 617 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 618 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 619 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 620 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 621 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 622 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 623 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 624 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 625 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 626 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 627 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 628 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 629 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 630 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 631 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 632 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 633 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 634 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 635 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 636 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 637 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 638 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 639 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 640 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 641 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 642 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 643 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 644 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 645 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 646 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 647 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 648 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 649 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 650 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 651 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 652 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 653 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 654 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 655 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 656 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 657 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 658 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 659 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 660 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 661 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 662 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 663 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 664 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 665 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 666 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 667 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 668 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 669 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 670 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 671 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 672 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 673 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 674 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 675 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 676 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 677 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 678 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 679 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 680 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 681 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 682 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 683 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 684 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 685 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 686 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 687 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 688 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 689 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 690 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 691 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 692 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 693 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 694 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 695 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 696 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 697 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 698 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 699 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 700 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 701 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 702 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 703 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 704 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 705 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 706 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 707 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 708 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 709 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 710 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 711 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 712 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 713 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 714 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 715 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 716 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 717 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 718 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 719 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 720 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 721 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 722 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 723 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 724 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 725 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 726 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 727 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 728 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 729 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 730 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 731 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 732 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 733 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 734 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 735 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 736 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 737 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 738 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 739 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 740 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 741 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 742 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 743 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 744 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 745 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 746 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 747 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 748 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 749 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 750 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 751 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 752 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 753 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 754 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 755 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 756 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 757 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 758 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 759 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 760 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 761 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 762 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 763 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 764 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 765 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 766 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 767 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 768 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 769 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 770 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 771 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 772 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 773 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 774 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 775 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 776 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 777 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 778 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 779 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 780 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 781 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 782 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 783 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 784 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 785 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 786 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 787 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 788 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 789 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 790 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 791 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 792 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 793 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 794 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 795 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 796 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 797 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 798 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 799 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 800 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 801 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 802 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 803 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 804 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 805 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 806 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 807 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 808 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 809 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 810 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 811 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 812 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 813 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 814 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 815 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 816 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 817 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 818 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 819 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 820 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 821 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 822 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 823 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 824 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 825 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 826 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 827 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 828 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 829 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 830 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 831 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 832 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 833 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 834 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 835 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 836 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 837 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 838 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 839 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 840 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 841 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 842 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 843 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 844 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 845 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 846 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 847 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 848 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 849 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 850 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 851 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 852 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 853 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 854 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 855 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 856 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 857 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 858 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 859 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 860 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 861 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 862 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 863 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 864 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 865 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 866 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 867 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 868 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 869 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 870 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 871 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 872 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 873 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 874 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 875 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 876 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 877 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 878 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 879 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 880 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 881 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 882 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 883 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 884 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 885 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 886 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 887 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 888 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 889 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 890 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 891 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 892 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 893 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 894 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 895 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 896 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 897 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 898 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 899 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 900 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 901 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 902 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 903 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 904 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 905 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 906 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 907 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 908 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 909 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 910 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 911 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 912 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 913 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 914 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 915 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 916 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 917 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 918 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 919 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 920 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 921 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 922 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 923 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 924 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 925 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 926 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 927 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 928 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 929 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 930 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 931 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 932 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 933 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 934 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 935 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 936 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 937 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 938 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 939 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 940 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 941 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 942 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 943 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 944 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 945 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 946 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 947 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 948 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 949 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 950 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 951 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 952 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 953 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 954 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 955 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 956 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 957 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 958 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 959 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 960 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 961 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 962 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 963 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 964 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 965 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 966 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 967 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 968 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 969 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 970 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 971 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 972 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 973 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 974 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 975 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 976 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 977 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 978 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 979 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 980 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 981 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 982 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 983 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 984 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 985 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 986 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 987 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 988 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 989 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 990 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 991 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 992 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 993 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 994 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 995 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 996 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 997 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 998 of color
+@W: CG134 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":18:11:18:15|No assignment to bit 999 of color
+@N: CG364 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB in library work.
+
+@N: CG364 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC in library work.
+
+@N: CG364 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:33|Synthesizing module MSS01_tmp_MSS_CCC_0_MSS_CCC in library work.
+
+@N: CG364 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
+
+@N: CG364 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS01.v":9:7:9:11|Synthesizing module MSS01 in library work.
+
+@N: CG364 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\TOP\TOP.v":9:7:9:9|Synthesizing module TOP in library work.
+
+@W: CL157 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\MSS_CCC_0\MSS01_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
+@W: CL246 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":10:13:10:17|Input port bits 31 to 5 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":10:13:10:17|Input port bits 1 to 0 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":11:18:11:23|Input port bits 31 to 24 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+@A: CL153 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":12:18:12:23|*Unassigned bits of PRDATA[31:0] are referenced and tied to 0 -- simulation mismatch possible.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\hdl\LED.v":4:6:4:12|Input PRESERN is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":396:0:396:4|Input IADDR is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":398:0:398:6|Input PRESETN is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":400:0:400:3|Input PCLK is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":521:0:521:7|Input PRDATAS1 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":528:0:528:7|Input PRDATAS2 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":535:0:535:7|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":542:0:542:7|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":549:0:549:7|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":556:0:556:7|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":563:0:563:7|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":570:0:570:7|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":577:0:577:7|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":584:0:584:8|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":591:0:591:8|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":598:0:598:8|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":605:0:605:8|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":612:0:612:8|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":619:0:619:8|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:7|Input PREADYS1 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:7|Input PREADYS2 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:7|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:7|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:7|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:7|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":642:0:642:7|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":644:0:644:7|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":646:0:646:7|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:8|Input PSLVERRS1 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:8|Input PSLVERRS2 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:8|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:8|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:8|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:8|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":676:0:676:8|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":678:0:678:8|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":680:0:680:8|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":682:0:682:9|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":684:0:684:9|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":686:0:686:9|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\mmanceor\Downloads\LED\LED\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 80MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 11 17:11:58 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 11 17:11:58 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 11 17:11:58 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+File C:\Users\mmanceor\Downloads\LED\LED\synthesis\synwork\TOP_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 11 17:11:59 2019
+
+###########################################################]
+# Thu Apr 11 17:11:59 2019
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-SP1-5
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\mss_tshell_syn.sdc
+@L: C:\Users\mmanceor\Downloads\LED\LED\synthesis\TOP_scck.rpt 
+Printing clock  summary report in "C:\Users\mmanceor\Downloads\LED\LED\synthesis\TOP_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+@N: MO111 :"c:\users\mmanceor\downloads\led\led\component\work\mss01\mss_ccc_0\mss01_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\mmanceor\downloads\led\led\component\work\mss01\mss_ccc_0\mss01_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\mmanceor\downloads\led\led\component\work\mss01\mss_ccc_0\mss01_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: BN115 :"c:\users\mmanceor\downloads\led\led\component\actel\directcore\coreapb3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":3815:0:3815:8|Removing instance CAPB3IIII (in view: COREAPB3_LIB.CoreAPB3_Z1(verilog)) of type view:COREAPB3_LIB.CAPB3II(verilog) because it does not drive other instances.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+
+Clock Summary
+*****************
+
+Start       Requested     Requested     Clock        Clock           Clock
+Clock       Frequency     Period        Type         Group           Load 
+--------------------------------------------------------------------------
+FAB_CLK     100.0 MHz     10.000        declared     clk_group_0     232  
+FCLK        100.0 MHz     10.000        declared     clk_group_0     0    
+==========================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\mmanceor\Downloads\LED\LED\synthesis\TOP.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 113MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Apr 11 17:11:59 2019
+
+###########################################################]
+# Thu Apr 11 17:12:00 2019
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-SP1-5
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 110MB)
+
+@N: MO111 :"c:\users\mmanceor\downloads\led\led\component\work\mss01\mss_ccc_0\mss01_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\mmanceor\downloads\led\led\component\work\mss01\mss_ccc_0\mss01_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\mmanceor\downloads\led\led\component\work\mss01\mss_ccc_0\mss01_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.MSS01_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+@N: MO231 :"c:\users\mmanceor\downloads\led\led\hdl\led.v":24:0:24:5|Found counter in view:work.LED_VERILOG(verilog) instance bit_counter[7:0] 
+@N: MO231 :"c:\users\mmanceor\downloads\led\led\hdl\led.v":24:0:24:5|Found counter in view:work.LED_VERILOG(verilog) instance data_counter[23:0] 
+@N: MO231 :"c:\users\mmanceor\downloads\led\led\hdl\led.v":24:0:24:5|Found counter in view:work.LED_VERILOG(verilog) instance pwm_counter[6:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 118MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 118MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 118MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name           Fanout, notes
+--------------------------------------------------
+LED_VERILOG_0.bit_counter[4] / Q     34           
+LED_VERILOG_0.bit_counter[5] / Q     66           
+LED_VERILOG_0.bit_counter[7] / Q     65           
+==================================================
+
+@N: FP130 |Promoting Net LED_VERILOG_0.bit_counter[5] on CLKINT  I_34 
+@N: FP130 |Promoting Net LED_VERILOG_0.bit_counter[7] on CLKINT  I_35 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+
+Replicating Sequential Instance LED_VERILOG_0.bit_counter[4], fanout 34 segments 2
+
+Added 0 Buffers
+Added 1 Cells via replication
+	Added 1 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 233 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+===================================== Non-Gated/Non-Generated Clocks ======================================
+Clock Tree ID     Driving Element     Drive Element Type                Fanout     Sample Instance         
+-----------------------------------------------------------------------------------------------------------
+@K:CKID0001       MSS01_0             clock definition on hierarchy     233        LED_VERILOG_0.color[191]
+===========================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 118MB)
+
+Writing Analyst data base C:\Users\mmanceor\Downloads\LED\LED\synthesis\synwork\TOP_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-SP1-5
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+
+@N: MT615 |Found clock FCLK with period 10.00ns 
+@N: MT615 |Found clock FAB_CLK with period 10.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Apr 11 17:12:01 2019
+#
+
+
+Top view:               TOP
+Library name:           smartfusion
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        smartfusion
+Paths requested:        5
+Constraint File(s):    C:\Users\mmanceor\Downloads\LED\LED\component\work\MSS01\mss_tshell_syn.sdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.632
+
+                   Requested     Estimated      Requested     Estimated                Clock        Clock          
+Starting Clock     Frequency     Frequency      Period        Period        Slack      Type         Group          
+-------------------------------------------------------------------------------------------------------------------
+FAB_CLK            100.0 MHz     86.0 MHz       10.000        11.632        -1.632     declared     clk_group_0    
+FCLK               100.0 MHz     NA             10.000        NA            NA         declared     clk_group_0    
+System             100.0 MHz     3110.4 MHz     10.000        0.322         9.678      system       system_clkgroup
+===================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+System    System   |  10.000      9.678   |  No paths    -      |  No paths    -      |  No paths    -    
+System    FAB_CLK  |  10.000      2.720   |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  10.000      -1.632  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FAB_CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                   Starting                                            Arrival           
+Instance                           Reference     Type     Pin     Net                  Time        Slack 
+                                   Clock                                                                 
+---------------------------------------------------------------------------------------------------------
+LED_VERILOG_0.data_counter[10]     FAB_CLK       DFN1     Q       data_counter[10]     0.580       -1.632
+LED_VERILOG_0.data_counter[12]     FAB_CLK       DFN1     Q       data_counter[12]     0.580       -1.502
+LED_VERILOG_0.data_counter[5]      FAB_CLK       DFN1     Q       data_counter[5]      0.580       -1.415
+LED_VERILOG_0.data_counter[4]      FAB_CLK       DFN1     Q       data_counter[4]      0.580       -1.291
+LED_VERILOG_0.data_counter[1]      FAB_CLK       DFN1     Q       data_counter[1]      0.580       -1.281
+LED_VERILOG_0.data_counter[0]      FAB_CLK       DFN1     Q       data_counter[0]      0.580       -1.225
+LED_VERILOG_0.data_counter[3]      FAB_CLK       DFN1     Q       data_counter[3]      0.580       -1.152
+LED_VERILOG_0.data_counter[23]     FAB_CLK       DFN1     Q       data_counter[23]     0.737       -0.812
+LED_VERILOG_0.data_counter[15]     FAB_CLK       DFN1     Q       data_counter[15]     0.737       -0.702
+LED_VERILOG_0.data_counter[2]      FAB_CLK       DFN1     Q       data_counter[2]      0.580       -0.651
+=========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                 Starting                                                     Required           
+Instance                         Reference     Type       Pin     Net                         Time         Slack 
+                                 Clock                                                                           
+-----------------------------------------------------------------------------------------------------------------
+LED_VERILOG_0.LED                FAB_CLK       DFN1E1     D       LED_1_sqmuxa                9.427        -1.632
+LED_VERILOG_0.LED                FAB_CLK       DFN1E1     E       pwm_counter_RNI6B1FG[3]     9.392        -0.897
+LED_VERILOG_0.bit_counter[0]     FAB_CLK       DFN1E0     E       pwm_counter_RNI6B1FG[3]     9.392        -0.897
+LED_VERILOG_0.bit_counter[1]     FAB_CLK       DFN1E0     E       pwm_counter_RNI6B1FG[3]     9.392        -0.897
+LED_VERILOG_0.bit_counter[2]     FAB_CLK       DFN1E0     E       pwm_counter_RNI6B1FG[3]     9.392        -0.897
+LED_VERILOG_0.bit_counter[3]     FAB_CLK       DFN1E0     E       pwm_counter_RNI6B1FG[3]     9.392        -0.897
+LED_VERILOG_0.bit_counter[4]     FAB_CLK       DFN1E0     E       pwm_counter_RNI6B1FG[3]     9.392        -0.897
+LED_VERILOG_0.bit_counter[5]     FAB_CLK       DFN1E0     E       pwm_counter_RNI6B1FG[3]     9.392        -0.897
+LED_VERILOG_0.bit_counter[6]     FAB_CLK       DFN1E0     E       pwm_counter_RNI6B1FG[3]     9.392        -0.897
+LED_VERILOG_0.bit_counter[7]     FAB_CLK       DFN1E0     E       pwm_counter_RNI6B1FG[3]     9.392        -0.897
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      11.058
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.632
+
+    Number of logic level(s):                8
+    Starting point:                          LED_VERILOG_0.data_counter[10] / Q
+    Ending point:                            LED_VERILOG_0.LED / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+LED_VERILOG_0.data_counter[10]              DFN1       Q        Out     0.580     0.580       -         
+data_counter[10]                            Net        -        -       1.526     -           7         
+LED_VERILOG_0.data_counter_RNIO5L9[12]      OR2B       B        In      -         2.106       -         
+LED_VERILOG_0.data_counter_RNIO5L9[12]      OR2B       Y        Out     0.516     2.623       -         
+un1_data_counter_1lto12_1                   Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI7JPP[11]      OR3B       C        In      -         2.944       -         
+LED_VERILOG_0.data_counter_RNI7JPP[11]      OR3B       Y        Out     0.751     3.695       -         
+un1_data_counter_1lto12_2                   Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        C        In      -         4.016       -         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        Y        Out     0.633     4.649       -         
+un1_data_counter_1lt13                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       B        In      -         4.970       -         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       Y        Out     0.596     5.566       -         
+un1_data_counter_1lt23                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      B        In      -         5.888       -         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      Y        Out     0.627     6.515       -         
+data_counter_RNI2IQK5[13]                   Net        -        -       1.669     -           9         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      A        In      -         8.184       -         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      Y        Out     0.627     8.811       -         
+LED_1_sqmuxa_0_0                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      A        In      -         9.133       -         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      Y        Out     0.641     9.774       -         
+LED_1_sqmuxa_0_2                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO                       NOR3A      A        In      -         10.096      -         
+LED_VERILOG_0.LED_RNO                       NOR3A      Y        Out     0.641     10.737      -         
+LED_1_sqmuxa                                Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED                           DFN1E1     D        In      -         11.058      -         
+========================================================================================================
+Total path delay (propagation time + setup) of 11.632 is 6.187(53.2%) logic and 5.445(46.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      10.928
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.502
+
+    Number of logic level(s):                8
+    Starting point:                          LED_VERILOG_0.data_counter[12] / Q
+    Ending point:                            LED_VERILOG_0.LED / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+LED_VERILOG_0.data_counter[12]              DFN1       Q        Out     0.580     0.580       -         
+data_counter[12]                            Net        -        -       1.423     -           6         
+LED_VERILOG_0.data_counter_RNIO5L9[12]      OR2B       A        In      -         2.004       -         
+LED_VERILOG_0.data_counter_RNIO5L9[12]      OR2B       Y        Out     0.488     2.492       -         
+un1_data_counter_1lto12_1                   Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI7JPP[11]      OR3B       C        In      -         2.814       -         
+LED_VERILOG_0.data_counter_RNI7JPP[11]      OR3B       Y        Out     0.751     3.564       -         
+un1_data_counter_1lto12_2                   Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        C        In      -         3.886       -         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        Y        Out     0.633     4.519       -         
+un1_data_counter_1lt13                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       B        In      -         4.840       -         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       Y        Out     0.596     5.436       -         
+un1_data_counter_1lt23                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      B        In      -         5.758       -         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      Y        Out     0.627     6.385       -         
+data_counter_RNI2IQK5[13]                   Net        -        -       1.669     -           9         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      A        In      -         8.053       -         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      Y        Out     0.627     8.681       -         
+LED_1_sqmuxa_0_0                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      A        In      -         9.002       -         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      Y        Out     0.641     9.644       -         
+LED_1_sqmuxa_0_2                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO                       NOR3A      A        In      -         9.965       -         
+LED_VERILOG_0.LED_RNO                       NOR3A      Y        Out     0.641     10.607      -         
+LED_1_sqmuxa                                Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED                           DFN1E1     D        In      -         10.928      -         
+========================================================================================================
+Total path delay (propagation time + setup) of 11.502 is 6.159(53.6%) logic and 5.342(46.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      10.841
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.415
+
+    Number of logic level(s):                8
+    Starting point:                          LED_VERILOG_0.data_counter[5] / Q
+    Ending point:                            LED_VERILOG_0.LED / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+LED_VERILOG_0.data_counter[5]               DFN1       Q        Out     0.580     0.580       -         
+data_counter[5]                             Net        -        -       1.279     -           5         
+LED_VERILOG_0.data_counter_RNITBJM[4]       OR2B       B        In      -         1.860       -         
+LED_VERILOG_0.data_counter_RNITBJM[4]       OR2B       Y        Out     0.516     2.376       -         
+un1_data_counterlto5_1                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNIBNP32[1]      OR3        C        In      -         2.697       -         
+LED_VERILOG_0.data_counter_RNIBNP32[1]      OR3        Y        Out     0.751     3.448       -         
+un1_data_counterlt6                         Net        -        -       0.386     -           2         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        B        In      -         3.834       -         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        Y        Out     0.598     4.432       -         
+un1_data_counter_1lt13                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       B        In      -         4.753       -         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       Y        Out     0.596     5.349       -         
+un1_data_counter_1lt23                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      B        In      -         5.671       -         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      Y        Out     0.627     6.298       -         
+data_counter_RNI2IQK5[13]                   Net        -        -       1.669     -           9         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      A        In      -         7.967       -         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      Y        Out     0.627     8.594       -         
+LED_1_sqmuxa_0_0                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      A        In      -         8.915       -         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      Y        Out     0.641     9.557       -         
+LED_1_sqmuxa_0_2                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO                       NOR3A      A        In      -         9.878       -         
+LED_VERILOG_0.LED_RNO                       NOR3A      Y        Out     0.641     10.520      -         
+LED_1_sqmuxa                                Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED                           DFN1E1     D        In      -         10.841      -         
+========================================================================================================
+Total path delay (propagation time + setup) of 11.415 is 6.152(53.9%) logic and 5.263(46.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      10.718
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.291
+
+    Number of logic level(s):                8
+    Starting point:                          LED_VERILOG_0.data_counter[4] / Q
+    Ending point:                            LED_VERILOG_0.LED / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+LED_VERILOG_0.data_counter[4]               DFN1       Q        Out     0.580     0.580       -         
+data_counter[4]                             Net        -        -       1.184     -           4         
+LED_VERILOG_0.data_counter_RNITBJM[4]       OR2B       A        In      -         1.764       -         
+LED_VERILOG_0.data_counter_RNITBJM[4]       OR2B       Y        Out     0.488     2.252       -         
+un1_data_counterlto5_1                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNIBNP32[1]      OR3        C        In      -         2.574       -         
+LED_VERILOG_0.data_counter_RNIBNP32[1]      OR3        Y        Out     0.751     3.325       -         
+un1_data_counterlt6                         Net        -        -       0.386     -           2         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        B        In      -         3.710       -         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        Y        Out     0.598     4.308       -         
+un1_data_counter_1lt13                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       B        In      -         4.630       -         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       Y        Out     0.596     5.226       -         
+un1_data_counter_1lt23                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      B        In      -         5.547       -         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      Y        Out     0.627     6.175       -         
+data_counter_RNI2IQK5[13]                   Net        -        -       1.669     -           9         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      A        In      -         7.843       -         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      Y        Out     0.627     8.471       -         
+LED_1_sqmuxa_0_0                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      A        In      -         8.792       -         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      Y        Out     0.641     9.433       -         
+LED_1_sqmuxa_0_2                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO                       NOR3A      A        In      -         9.755       -         
+LED_VERILOG_0.LED_RNO                       NOR3A      Y        Out     0.641     10.396      -         
+LED_1_sqmuxa                                Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED                           DFN1E1     D        In      -         10.718      -         
+========================================================================================================
+Total path delay (propagation time + setup) of 11.291 is 6.124(54.2%) logic and 5.167(45.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      10.707
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.281
+
+    Number of logic level(s):                8
+    Starting point:                          LED_VERILOG_0.data_counter[1] / Q
+    Ending point:                            LED_VERILOG_0.LED / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+LED_VERILOG_0.data_counter[1]               DFN1       Q        Out     0.580     0.580       -         
+data_counter[1]                             Net        -        -       1.184     -           4         
+LED_VERILOG_0.data_counter_RNIL3JM[1]       NOR2       B        In      -         1.764       -         
+LED_VERILOG_0.data_counter_RNIL3JM[1]       NOR2       Y        Out     0.514     2.278       -         
+un1_data_counterlt5                         Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNIBNP32[1]      OR3        B        In      -         2.600       -         
+LED_VERILOG_0.data_counter_RNIBNP32[1]      OR3        Y        Out     0.714     3.314       -         
+un1_data_counterlt6                         Net        -        -       0.386     -           2         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        B        In      -         3.700       -         
+LED_VERILOG_0.data_counter_RNI5KGV3[11]     AO1        Y        Out     0.598     4.298       -         
+un1_data_counter_1lt13                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       B        In      -         4.619       -         
+LED_VERILOG_0.data_counter_RNI2V594[13]     AO1C       Y        Out     0.596     5.215       -         
+un1_data_counter_1lt23                      Net        -        -       0.322     -           1         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      B        In      -         5.537       -         
+LED_VERILOG_0.data_counter_RNI2IQK5[13]     NOR2B      Y        Out     0.627     6.164       -         
+data_counter_RNI2IQK5[13]                   Net        -        -       1.669     -           9         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      A        In      -         7.833       -         
+LED_VERILOG_0.LED_RNO_3                     NOR2A      Y        Out     0.627     8.460       -         
+LED_1_sqmuxa_0_0                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      A        In      -         8.782       -         
+LED_VERILOG_0.LED_RNO_0                     NOR3A      Y        Out     0.641     9.423       -         
+LED_1_sqmuxa_0_2                            Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED_RNO                       NOR3A      A        In      -         9.745       -         
+LED_VERILOG_0.LED_RNO                       NOR3A      Y        Out     0.641     10.386      -         
+LED_1_sqmuxa                                Net        -        -       0.322     -           1         
+LED_VERILOG_0.LED                           DFN1E1     D        In      -         10.707      -         
+========================================================================================================
+Total path delay (propagation time + setup) of 11.281 is 6.114(54.2%) logic and 5.167(45.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                           Starting                                                                        Arrival          
+Instance                   Reference     Type        Pin              Net                                  Time        Slack
+                           Clock                                                                                            
+----------------------------------------------------------------------------------------------------------------------------
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPENABLE       CoreAPB3_0_APBmslave0_PENABLE        0.000       2.720
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWRITE        CoreAPB3_0_APBmslave0_PWRITE         0.000       2.755
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     MSS01_0_MSS_MASTER_APB_PADDR[10]     0.000       2.881
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          MSS01_0_MSS_MASTER_APB_PSELx         0.000       2.911
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      MSS01_0_MSS_MASTER_APB_PADDR[8]      0.000       2.998
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      MSS01_0_MSS_MASTER_APB_PADDR[9]      0.000       3.021
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     MSS01_0_MSS_MASTER_APB_PADDR[11]     0.000       3.152
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[3]      CoreAPB3_0_APBmslave0_PADDR[3]       0.000       4.087
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[4]      CoreAPB3_0_APBmslave0_PADDR[4]       0.000       4.087
+MSS01_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[2]      CoreAPB3_0_APBmslave0_PADDR[2]       0.000       4.823
+============================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                           Starting                                                        Required          
+Instance                   Reference     Type       Pin     Net                            Time         Slack
+                           Clock                                                                             
+-------------------------------------------------------------------------------------------------------------
+LED_VERILOG_0.color[0]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+LED_VERILOG_0.color[1]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+LED_VERILOG_0.color[2]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+LED_VERILOG_0.color[3]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+LED_VERILOG_0.color[4]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+LED_VERILOG_0.color[5]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+LED_VERILOG_0.color[6]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+LED_VERILOG_0.color[7]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+LED_VERILOG_0.color[8]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+LED_VERILOG_0.color[9]     System        DFN1E1     E       color_11_3_e_RNI74PR1_0[0]     9.392        2.720
+=============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.608
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.392
+
+    - Propagation time:                      6.672
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 2.720
+
+    Number of logic level(s):                3
+    Starting point:                          MSS01_0.MSS_ADLIB_INST / MSSPENABLE
+    Ending point:                            LED_VERILOG_0.color[48] / E
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                            Pin            Pin               Arrival     No. of    
+Name                                          Type        Name           Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------
+MSS01_0.MSS_ADLIB_INST                        MSS_APB     MSSPENABLE     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PENABLE                 Net         -              -       0.322     -           1         
+LED_VERILOG_0.color_write_3                   NOR3B       A              In      -         0.322       -         
+LED_VERILOG_0.color_write_3                   NOR3B       Y              Out     0.641     0.963       -         
+color_write_3                                 Net         -              -       0.322     -           1         
+LED_VERILOG_0.color_write                     NOR3C       C              In      -         1.284       -         
+LED_VERILOG_0.color_write                     NOR3C       Y              Out     0.641     1.926       -         
+color_write                                   Net         -              -       1.639     -           8         
+LED_VERILOG_0.color_11_3_e_RNI3GP32_0[48]     NOR3B       A              In      -         3.564       -         
+LED_VERILOG_0.color_11_3_e_RNI3GP32_0[48]     NOR3B       Y              Out     0.641     4.206       -         
+color_11_3_e_RNI3GP32_0[48]                   Net         -              -       2.466     -           24        
+LED_VERILOG_0.color[48]                       DFN1E1      E              In      -         6.672       -         
+=================================================================================================================
+Total path delay (propagation time + setup) of 7.280 is 2.532(34.8%) logic and 4.748(65.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+
+--------------------------------------------------------------------------------
+Target Part: A2F200M3F_FBGA484_STD
+Report for cell TOP.verilog
+  Core Cell usage:
+              cell count     area count*area
+               AO1     4      1.0        4.0
+              AO1C     1      1.0        1.0
+              AX1C    11      1.0       11.0
+            CLKINT     2      0.0        0.0
+               GND     4      0.0        0.0
+               INV     1      1.0        1.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+               MX2   189      1.0      189.0
+              NOR2     7      1.0        7.0
+             NOR2A     7      1.0        7.0
+             NOR2B    23      1.0       23.0
+              NOR3     3      1.0        3.0
+             NOR3A     5      1.0        5.0
+             NOR3B    10      1.0       10.0
+             NOR3C    23      1.0       23.0
+               OA1     2      1.0        2.0
+              OA1A     1      1.0        1.0
+              OA1C     2      1.0        2.0
+               OR2     3      1.0        3.0
+              OR2B     7      1.0        7.0
+               OR3     3      1.0        3.0
+              OR3A     1      1.0        1.0
+              OR3B     1      1.0        1.0
+              OR3C     1      1.0        1.0
+             RCOSC     1      0.0        0.0
+               VCC     4      0.0        0.0
+               XA1    13      1.0       13.0
+              XOR2    12      1.0       12.0
+
+
+              DFN1    24      1.0       24.0
+            DFN1E0     9      1.0        9.0
+            DFN1E1   200      1.0      200.0
+                   -----          ----------
+             TOTAL   576               563.0
+
+
+  IO Cell usage:
+              cell count
+         INBUF_MSS     1
+            OUTBUF     1
+                   -----
+             TOTAL     2
+
+
+Core Cells         : 563 of 4608 (12%)
+IO Cells           : 2
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 28MB peak: 118MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Apr 11 17:12:01 2019
+
+###########################################################]

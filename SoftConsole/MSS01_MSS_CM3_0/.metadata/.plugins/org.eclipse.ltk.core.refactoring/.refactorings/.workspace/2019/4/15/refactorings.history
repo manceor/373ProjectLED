@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;MSS01_MSS_CM3_0_hw_platform/Debug/CMSIS/system_a2fxxxm3.o&apos;" deleteContents="false" description="Delete resource &apos;MSS01_MSS_CM3_0_hw_platform/Debug/CMSIS/system_a2fxxxm3.o&apos;" element1="/MSS01_MSS_CM3_0_hw_platform/Debug/CMSIS/system_a2fxxxm3.o" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1554749548700"/>
+</session>

@@ -1,0 +1,14 @@
+*****************************************************************
+Pin Report - Date: Thu Apr 11 17:12:35 2019 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.9
+Version: 11.9.0.4
+Design Name: TOP
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port        |Pin |Fixed |Function        |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------------|----|------|----------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+LED          J19  Yes    GCA0/IO28NDB1V0  LVTTL    12                 High  None           ---              No    35                No           No
+MSS_RESET_N  R1   Yes    MSS_RESET_N      LVTTL    ---                ---   None           No               ---   ---               No           Yes

@@ -1,0 +1,56 @@
+Target Part: A2F200M3F_FBGA484_STD
+Report for cell TOP.verilog
+  Core Cell usage:
+              cell count     area count*area
+               AO1     4      1.0        4.0
+              AO1C     1      1.0        1.0
+              AX1C    11      1.0       11.0
+            CLKINT     2      0.0        0.0
+               GND     4      0.0        0.0
+               INV     1      1.0        1.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+               MX2   189      1.0      189.0
+              NOR2     7      1.0        7.0
+             NOR2A     7      1.0        7.0
+             NOR2B    23      1.0       23.0
+              NOR3     3      1.0        3.0
+             NOR3A     5      1.0        5.0
+             NOR3B    10      1.0       10.0
+             NOR3C    23      1.0       23.0
+               OA1     2      1.0        2.0
+              OA1A     1      1.0        1.0
+              OA1C     2      1.0        2.0
+               OR2     3      1.0        3.0
+              OR2B     7      1.0        7.0
+               OR3     3      1.0        3.0
+              OR3A     1      1.0        1.0
+              OR3B     1      1.0        1.0
+              OR3C     1      1.0        1.0
+             RCOSC     1      0.0        0.0
+               VCC     4      0.0        0.0
+               XA1    13      1.0       13.0
+              XOR2    12      1.0       12.0
+
+
+              DFN1    24      1.0       24.0
+            DFN1E0     9      1.0        9.0
+            DFN1E1   200      1.0      200.0
+                   -----          ----------
+             TOTAL   576               563.0
+
+
+  IO Cell usage:
+              cell count
+         INBUF_MSS     1
+            OUTBUF     1
+                   -----
+             TOTAL     2
+
+
+Core Cells         : 563 of 4608 (12%)
+IO Cells           : 2
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+

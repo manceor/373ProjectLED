@@ -1,0 +1,715 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.9
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+Date: Thu Apr 11 17:12:42 2019
+
+
+Design: TOP
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_ccc_gla1
+Period (ns):                12.451
+Frequency (MHz):            80.315
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      12.144
+
+Clock Domain:               mss_ccc_gla0
+Period (ns):                12.500
+Frequency (MHz):            80.000
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        -4.814
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               MSS01_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla1
+
+SET Register to Register
+
+Path 1
+  From:                  LED_VERILOG_0/data_counter[1]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            11.901
+  Slack (ns):            -2.451
+  Arrival (ns):          17.193
+  Required (ns):         14.742
+  Setup (ns):            0.522
+  Minimum Period (ns):   12.451
+
+Path 2
+  From:                  LED_VERILOG_0/bit_counter[7]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            11.989
+  Slack (ns):            -2.437
+  Arrival (ns):          17.211
+  Required (ns):         14.774
+  Setup (ns):            0.490
+  Minimum Period (ns):   12.437
+
+Path 3
+  From:                  LED_VERILOG_0/data_counter[0]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            11.832
+  Slack (ns):            -2.382
+  Arrival (ns):          17.124
+  Required (ns):         14.742
+  Setup (ns):            0.522
+  Minimum Period (ns):   12.382
+
+Path 4
+  From:                  LED_VERILOG_0/bit_counter[5]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            11.782
+  Slack (ns):            -2.230
+  Arrival (ns):          17.004
+  Required (ns):         14.774
+  Setup (ns):            0.490
+  Minimum Period (ns):   12.230
+
+Path 5
+  From:                  LED_VERILOG_0/data_counter[1]:CLK
+  To:                    LED_VERILOG_0/bit_counter[7]:E
+  Delay (ns):            11.532
+  Slack (ns):            -2.156
+  Arrival (ns):          16.824
+  Required (ns):         14.668
+  Setup (ns):            0.554
+  Minimum Period (ns):   12.156
+
+
+Expanded Path 1
+  From: LED_VERILOG_0/data_counter[1]:CLK
+  To: LED_VERILOG_0/LED:D
+  data required time                             14.742
+  data arrival time                          -   17.193
+  slack                                          -2.451
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        MSS01_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: MSS01_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        MSS01_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        MSS01_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.662          net: FAB_CLK
+  5.292                        LED_VERILOG_0/data_counter[1]:CLK (r)
+               +     0.528          cell: ADLIB:DFN1
+  5.820                        LED_VERILOG_0/data_counter[1]:Q (r)
+               +     0.498          net: LED_VERILOG_0/data_counter[1]
+  6.318                        LED_VERILOG_0/data_counter_RNIL3JM[1]:B (r)
+               +     0.538          cell: ADLIB:NOR2
+  6.856                        LED_VERILOG_0/data_counter_RNIL3JM[1]:Y (f)
+               +     0.840          net: LED_VERILOG_0/un1_data_counterlt5
+  7.696                        LED_VERILOG_0/data_counter_RNIBNP32[1]:B (f)
+               +     0.650          cell: ADLIB:OR3
+  8.346                        LED_VERILOG_0/data_counter_RNIBNP32[1]:Y (f)
+               +     1.480          net: LED_VERILOG_0/un1_data_counterlt6
+  9.826                        LED_VERILOG_0/data_counter_RNI5KGV3[11]:B (f)
+               +     0.579          cell: ADLIB:AO1
+  10.405                       LED_VERILOG_0/data_counter_RNI5KGV3[11]:Y (f)
+               +     0.296          net: LED_VERILOG_0/un1_data_counter_1lt13
+  10.701                       LED_VERILOG_0/data_counter_RNI2V594[13]:B (f)
+               +     0.543          cell: ADLIB:AO1C
+  11.244                       LED_VERILOG_0/data_counter_RNI2V594[13]:Y (f)
+               +     1.238          net: LED_VERILOG_0/un1_data_counter_1lt23
+  12.482                       LED_VERILOG_0/data_counter_RNI2IQK5[13]:B (f)
+               +     0.574          cell: ADLIB:NOR2B
+  13.056                       LED_VERILOG_0/data_counter_RNI2IQK5[13]:Y (f)
+               +     1.054          net: LED_VERILOG_0/data_counter_RNI2IQK5[13]
+  14.110                       LED_VERILOG_0/LED_RNO_3:A (f)
+               +     0.574          cell: ADLIB:NOR2A
+  14.684                       LED_VERILOG_0/LED_RNO_3:Y (f)
+               +     0.711          net: LED_VERILOG_0/LED_1_sqmuxa_0_0
+  15.395                       LED_VERILOG_0/LED_RNO_0:A (f)
+               +     0.622          cell: ADLIB:NOR3A
+  16.017                       LED_VERILOG_0/LED_RNO_0:Y (f)
+               +     0.296          net: LED_VERILOG_0/LED_1_sqmuxa_0_2
+  16.313                       LED_VERILOG_0/LED_RNO:A (f)
+               +     0.584          cell: ADLIB:NOR3A
+  16.897                       LED_VERILOG_0/LED_RNO:Y (f)
+               +     0.296          net: LED_VERILOG_0/LED_1_sqmuxa
+  17.193                       LED_VERILOG_0/LED:D (f)
+                                    
+  17.193                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       MSS01_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: MSS01_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       MSS01_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       MSS01_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.634          net: FAB_CLK
+  15.264                       LED_VERILOG_0/LED:CLK (r)
+               -     0.522          Library setup time: ADLIB:DFN1E1
+  14.742                       LED_VERILOG_0/LED:D
+                                    
+  14.742                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                  LED_VERILOG_0/LED:CLK
+  To:                    LED
+  Delay (ns):            6.880
+  Slack (ns):
+  Arrival (ns):          12.144
+  Required (ns):
+  Clock to Out (ns):     12.144
+
+
+Expanded Path 1
+  From: LED_VERILOG_0/LED:CLK
+  To: LED
+  data required time                             N/C
+  data arrival time                          -   12.144
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        MSS01_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: MSS01_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        MSS01_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        MSS01_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.634          net: FAB_CLK
+  5.264                        LED_VERILOG_0/LED:CLK (r)
+               +     0.671          cell: ADLIB:DFN1E1
+  5.935                        LED_VERILOG_0/LED:Q (f)
+               +     2.428          net: LED_c
+  8.363                        LED_pad/U0/U1:D (f)
+               +     0.530          cell: ADLIB:IOTRI_OB_EB
+  8.893                        LED_pad/U0/U1:DOUT (f)
+               +     0.000          net: LED_pad/U0/NET1
+  8.893                        LED_pad/U0/U0:D (f)
+               +     3.251          cell: ADLIB:IOPAD_TRI
+  12.144                       LED_pad/U0/U0:PAD (f)
+               +     0.000          net: LED
+  12.144                       LED (f)
+                                    
+  12.144                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          MSS01_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  N/C
+                                    
+  N/C                          LED (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET mss_fabric_interface_clock to mss_ccc_gla1
+
+Path 1
+  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    LED_VERILOG_0/color[122]:E
+  Delay (ns):            12.504
+  Slack (ns):            -1.170
+  Arrival (ns):          16.059
+  Required (ns):         14.889
+  Setup (ns):            0.395
+
+Path 2
+  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    LED_VERILOG_0/color[8]:E
+  Delay (ns):            12.475
+  Slack (ns):            -1.147
+  Arrival (ns):          16.030
+  Required (ns):         14.883
+  Setup (ns):            0.395
+
+Path 3
+  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    LED_VERILOG_0/color[140]:E
+  Delay (ns):            12.311
+  Slack (ns):            -1.013
+  Arrival (ns):          15.866
+  Required (ns):         14.853
+  Setup (ns):            0.395
+
+Path 4
+  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    LED_VERILOG_0/color[120]:E
+  Delay (ns):            12.370
+  Slack (ns):            -0.995
+  Arrival (ns):          15.925
+  Required (ns):         14.930
+  Setup (ns):            0.395
+
+Path 5
+  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    LED_VERILOG_0/color[61]:E
+  Delay (ns):            12.364
+  Slack (ns):            -0.994
+  Arrival (ns):          15.919
+  Required (ns):         14.925
+  Setup (ns):            0.395
+
+
+Expanded Path 1
+  From: MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
+  To: LED_VERILOG_0/color[122]:E
+  data required time                             14.889
+  data arrival time                          -   16.059
+  slack                                          -1.170
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_fabric_interface_clock
+               +     0.000          Clock source
+  0.000                        MSS01_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     3.555          Clock generation
+  3.555
+               +     3.667          cell: ADLIB:MSS_APB_IP
+  7.222                        MSS01_0/MSS_ADLIB_INST/U_CORE:MSSPADDR[8] (f)
+               +     0.158          net: MSS01_0/MSS_ADLIB_INST/MSSPADDR[8]INT_NET
+  7.380                        MSS01_0/MSS_ADLIB_INST/U_32:PIN3INT (f)
+               +     0.086          cell: ADLIB:MSS_IF
+  7.466                        MSS01_0/MSS_ADLIB_INST/U_32:PIN3 (f)
+               +     1.169          net: MSS01_0_MSS_MASTER_APB_PADDR[8]
+  8.635                        LED_VERILOG_0/color_write_3:C (f)
+               +     0.445          cell: ADLIB:NOR3B
+  9.080                        LED_VERILOG_0/color_write_3:Y (r)
+               +     1.038          net: LED_VERILOG_0/color_write_3
+  10.118                       LED_VERILOG_0/color_write:C (r)
+               +     0.606          cell: ADLIB:NOR3C
+  10.724                       LED_VERILOG_0/color_write:Y (r)
+               +     1.573          net: LED_VERILOG_0/color_write
+  12.297                       LED_VERILOG_0/color_11_3_e_RNI8EFO1[100]:B (r)
+               +     0.568          cell: ADLIB:NOR3C
+  12.865                       LED_VERILOG_0/color_11_3_e_RNI8EFO1[100]:Y (r)
+               +     3.194          net: LED_VERILOG_0/color_11_3_e_RNI8EFO1[100]
+  16.059                       LED_VERILOG_0/color[122]:E (r)
+                                    
+  16.059                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       MSS01_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: MSS01_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       MSS01_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       MSS01_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.654          net: FAB_CLK
+  15.284                       LED_VERILOG_0/color[122]:CLK (r)
+               -     0.395          Library setup time: ADLIB:DFN1E1
+  14.889                       LED_VERILOG_0/color[122]:E
+                                    
+  14.889                       data required time
+
+
+END SET mss_fabric_interface_clock to mss_ccc_gla1
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin MSS01_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                  MSS_RESET_N
+  To:                    MSS01_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  Delay (ns):            0.937
+  Slack (ns):
+  Arrival (ns):          0.937
+  Required (ns):
+  Setup (ns):            -2.196
+  External Setup (ns):   -4.814
+
+
+Expanded Path 1
+  From: MSS_RESET_N
+  To: MSS01_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  data required time                             N/C
+  data arrival time                          -   0.937
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_RESET_N (r)
+               +     0.000          net: MSS_RESET_N
+  0.000                        MSS01_0/MSS_RESET_0_MSS_RESET_N:PAD (r)
+               +     0.937          cell: ADLIB:IOPAD_IN
+  0.937                        MSS01_0/MSS_RESET_0_MSS_RESET_N:Y (r)
+               +     0.000          net: MSS01_0/MSS_RESET_0_MSS_RESET_N_Y
+  0.937                        MSS01_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (r)
+                                    
+  0.937                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          MSS01_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.925          Clock generation
+  N/C
+               +     0.630          net: MSS01_0/GLA0
+  N/C                          MSS01_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               -    -2.196          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          MSS01_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain MSS01_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

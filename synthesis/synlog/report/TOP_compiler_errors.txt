@@ -1,0 +1,2 @@
+@E: CS153 :"C:\Users\mmanceor\Desktop\LEDV3\hdl\LED.v":101:13:101:13|Can't mix blocking and non-blocking assignments to a variable
+
