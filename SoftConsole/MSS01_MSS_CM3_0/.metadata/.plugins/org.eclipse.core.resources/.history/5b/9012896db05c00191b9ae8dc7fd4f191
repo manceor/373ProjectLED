@@ -1,0 +1,35 @@
+#include <inttypes.h>
+#define LED1_ADDR 0x40050000
+#define LED2_ADDR 0x40050004
+#define LED3_ADDR 0x40050008
+#define LED4_ADDR 0x4005000c
+#define LED5_ADDR 0x40050010
+#define LED6_ADDR 0x40050014
+#define LED7_ADDR 0x40050018
+#define LED8_ADDR 0x4005001c
+#define blue 0xff0000
+#define red 0x00ff00
+#define green 0x0000ff
+#define yellow 0x00ffff
+#define off 0x0
+int main()
+{
+	uint32_t* LED1 = (uint32_t*)LED1_ADDR;
+	uint32_t* LED2 = (uint32_t*)LED2_ADDR;
+	uint32_t* LED3 = (uint32_t*)LED3_ADDR;
+	uint32_t* LED4 = (uint32_t*)LED4_ADDR;
+	uint32_t* LED5 = (uint32_t*)LED5_ADDR;
+	uint32_t* LED6 = (uint32_t*)LED6_ADDR;
+	uint32_t* LED7 = (uint32_t*)LED7_ADDR;
+	uint32_t* LED8 = (uint32_t*)LED8_ADDR;
+	*LED1 = blue;
+	*LED2 = off;
+	*LED3 = blue;
+	*LED4 = off;
+	*LED5 = blue;
+	*LED6 = off;
+	*LED7 = blue;
+	*LED8 = off;
+
+	return 0;
+}

@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-Date: Thu Apr 11 17:12:34 2019
+Date: Thu Apr 11 20:07:13 2019
 Design Name: TOP  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 
 
@@ -20,11 +20,11 @@ Global Nets Information:
         |-------------------------------------------------------------|
         |Name                        |Core      |IO        |RAM       |
         |-------------------------------------------------------------|
-        |FAB_CLK                     |      233 |        0 |        0 |
+        |FAB_CLK                     |      237 |        0 |        0 |
         |-------------------------------------------------------------|
-        |LED_VERILOG_0/bit_counter[5]|       66 |        0 |        0 |
+        |LED_VERILOG_0/bit_counter[5]|       67 |        0 |        0 |
         |-------------------------------------------------------------|
-        |LED_VERILOG_0/bit_counter[7]|       65 |        0 |        0 |
+        |LED_VERILOG_0/bit_counter[7]|       66 |        0 |        0 |
         |-------------------------------------------------------------|
 
 Summary of Global Net Placement:

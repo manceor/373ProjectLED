@@ -1,6 +1,6 @@
 <project name="TOP" version="1.1">
     <ProjectDirectory>
-        C:\Users\mmanceor\Downloads\LED\LED\designer\impl1\TOP_fp
+        C:\Users\mtstacho\Desktop\LED\designer\impl1\TOP_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\mmanceor\Downloads\LED\LED\designer\impl1\TOP_fp\TOP.log
+        C:\Users\mtstacho\Desktop\LED\designer\impl1\TOP_fp\TOP.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\mmanceor\Downloads\LED\LED\designer\impl1\TOP_fp\TOP.pdb
+                C:\Users\mtstacho\Desktop\LED\designer\impl1\TOP_fp\TOP.pdb
             </filename>
             <local>
                 projectData\TOP.pdb

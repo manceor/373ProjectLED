@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\mmanceor\Downloads\LED\LED\synthesis\synlog\TOP_fpga_mapper.srr</data>
+<data>C:\Users\mtstacho\Desktop\LED\synthesis\synlog\TOP_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -17,8 +17,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>FAB_CLK</data>
 <data>100.0 MHz</data>
-<data>86.0 MHz</data>
-<data>-1.632</data>
+<data>83.8 MHz</data>
+<data>-1.938</data>
 </row>
 <row>
 <data>FCLK</data>

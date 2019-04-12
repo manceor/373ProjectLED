@@ -3,12 +3,12 @@ Report for cell TOP.verilog
                                           Cell usage:
                                cell       count     area    count*area
                                 GND         1       0.0        0.0
-                        LED_VERILOG         1     563.0      563.0
+                        LED_VERILOG         1     569.0      569.0
                               MSS01         1       0.0        0.0
                              OUTBUF         1       0.0        0.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL              5                563.0
+                         TOTAL              5                569.0
 ----------------------------------------------------------------------
 Report for cell MSS01.netlist
      Instance path:  MSS01_0
@@ -38,33 +38,33 @@ Report for cell LED_VERILOG.netlist
                                           Cell usage:
                                cell       count     area    count*area
                                 AO1         4       1.0        4.0
+                               AO1A         1       1.0        1.0
                                AO1C         1       1.0        1.0
-                               AX1C        11       1.0       11.0
+                               AO1D         1       1.0        1.0
+                               AX1C        13       1.0       13.0
                              CLKINT         2       0.0        0.0
-                               DFN1        24       1.0       24.0
-                             DFN1E0         9       1.0        9.0
-                             DFN1E1       200       1.0      200.0
+                               DFN1         5       1.0        5.0
+                             DFN1E0         7       1.0        7.0
+                             DFN1E1       225       1.0      225.0
                                 GND         1       0.0        0.0
-                                INV         1       1.0        1.0
-                                MX2       189       1.0      189.0
+                                MX2       188       1.0      188.0
                                NOR2         7       1.0        7.0
-                              NOR2A         7       1.0        7.0
-                              NOR2B        23       1.0       23.0
+                              NOR2A         4       1.0        4.0
+                              NOR2B        18       1.0       18.0
                                NOR3         3       1.0        3.0
-                              NOR3A         5       1.0        5.0
-                              NOR3B        10       1.0       10.0
-                              NOR3C        23       1.0       23.0
-                                OA1         2       1.0        2.0
-                               OA1A         1       1.0        1.0
-                               OA1C         2       1.0        2.0
-                                OR2         3       1.0        3.0
-                               OR2B         7       1.0        7.0
-                                OR3         3       1.0        3.0
-                               OR3A         1       1.0        1.0
-                               OR3B         1       1.0        1.0
+                              NOR3A        10       1.0       10.0
+                              NOR3B        11       1.0       11.0
+                              NOR3C        28       1.0       28.0
+                               OA1C         1       1.0        1.0
+                                OR2         2       1.0        2.0
+                               OR2A         1       1.0        1.0
+                               OR2B         4       1.0        4.0
+                                OR3         5       1.0        5.0
+                               OR3A         3       1.0        3.0
+                               OR3B         2       1.0        2.0
                                OR3C         1       1.0        1.0
                                 VCC         1       0.0        0.0
-                                XA1        13       1.0       13.0
-                               XOR2        12       1.0       12.0
+                               XA1B        11       1.0       11.0
+                               XOR2        13       1.0       13.0
                             
-                         TOTAL            567                563.0
+                         TOTAL            573                569.0

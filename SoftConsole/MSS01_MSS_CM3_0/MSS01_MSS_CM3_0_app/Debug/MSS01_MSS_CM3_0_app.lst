@@ -21,19 +21,19 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   8 .debug_abbrev 000002ab  00000000  00000000  00009608  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_line   0000080a  00000000  00000000  000098b3  2**0
+  9 .debug_line   0000080c  00000000  00000000  000098b3  2**0
                   CONTENTS, READONLY, DEBUGGING
  10 .debug_frame  000002f8  00000000  00000000  0000a0c0  2**2
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_str    00000686  00000000  00000000  0000a3b8  2**0
+ 11 .debug_str    0000067a  00000000  00000000  0000a3b8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_loc    00000496  00000000  00000000  0000aa3e  2**0
+ 12 .debug_loc    00000496  00000000  00000000  0000aa32  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_macinfo 0000cd2c  00000000  00000000  0000aed4  2**0
+ 13 .debug_macinfo 0000cd2c  00000000  00000000  0000aec8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .ARM.attributes 00000025  00000000  00000000  00017c00  2**0
+ 14 .ARM.attributes 00000025  00000000  00000000  00017bf4  2**0
                   CONTENTS, READONLY
- 15 .debug_ranges 000000e0  00000000  00000000  00017c25  2**0
+ 15 .debug_ranges 000000e0  00000000  00000000  00017c19  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -825,6 +825,10 @@ int main()
 2000052e:	69fb      	ldr	r3, [r7, #28]
 20000530:	f04f 0200 	mov.w	r2, #0
 20000534:	601a      	str	r2, [r3, #0]
+		for (i = 0; i < 10000000; ++i){
+		}
+	}
+	*/
 
 	return 0;
 20000536:	f04f 0300 	mov.w	r3, #0

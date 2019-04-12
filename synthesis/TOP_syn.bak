@@ -1,20 +1,20 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-SP1-5
-#--  Project file C:\Users\mmanceor\Downloads\LED\LED\synthesis\TOP_syn.prj
-#--  Written on Thu Apr 11 16:36:37 2019
+#--  Project file C:\Users\mtstacho\Desktop\LED\synthesis\TOP_syn.prj
+#--  Written on Thu Apr 11 17:12:01 2019
 
 
 #project files
-add_file -verilog "C:/Users/mmanceor/Downloads/LED/LED/hdl/LED.v"
-add_file -verilog "C:/Users/mmanceor/Downloads/LED/LED/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
-add_file -verilog "C:/Users/mmanceor/Downloads/LED/LED/component/work/MSS01/MSS_CCC_0/MSS01_tmp_MSS_CCC_0_MSS_CCC.v"
-add_file -verilog "C:/Users/mmanceor/Downloads/LED/LED/component/work/MSS01/mss_tshell.v"
-add_file -verilog "C:/Users/mmanceor/Downloads/LED/LED/component/work/MSS01/MSS01.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/mmanceor/Downloads/LED/LED/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/mmanceor/Downloads/LED/LED/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/mmanceor/Downloads/LED/LED/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v"
-add_file -verilog "C:/Users/mmanceor/Downloads/LED/LED/component/work/TOP/TOP.v"
-add_file -constraint "C:/Users/mmanceor/Downloads/LED/LED/component/work/MSS01/mss_tshell_syn.sdc"
+add_file -verilog "C:/Users/mtstacho/Desktop/LED/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
+add_file -verilog "C:/Users/mtstacho/Desktop/LED/component/work/MSS01/MSS_CCC_0/MSS01_tmp_MSS_CCC_0_MSS_CCC.v"
+add_file -verilog "C:/Users/mtstacho/Desktop/LED/component/work/MSS01/mss_tshell.v"
+add_file -verilog "C:/Users/mtstacho/Desktop/LED/component/work/MSS01/MSS01.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/mtstacho/Desktop/LED/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/mtstacho/Desktop/LED/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/mtstacho/Desktop/LED/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v"
+add_file -verilog "C:/Users/mtstacho/Desktop/LED/hdl/LED.v"
+add_file -verilog "C:/Users/mtstacho/Desktop/LED/component/work/TOP/TOP.v"
+add_file -constraint "C:/Users/mtstacho/Desktop/LED/component/work/MSS01/mss_tshell_syn.sdc"
 
 
 

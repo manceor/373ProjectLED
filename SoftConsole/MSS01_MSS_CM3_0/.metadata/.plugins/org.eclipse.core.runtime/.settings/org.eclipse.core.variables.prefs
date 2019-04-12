@@ -1,3 +1,3 @@
-#Thu Apr 11 16:45:18 EDT 2019
+#Thu Apr 11 19:10:06 EDT 2019
 eclipse.preferences.version=1
-org.eclipse.core.variables.valueVariables=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<valueVariables>\r\n<valueVariable description\="Directory holding debug executable" name\="build_loc" readOnly\="false" value\="C\:/Users/mmanceor/Downloads/LED/LED/SoftConsole/MSS01_MSS_CM3_0/MSS01_MSS_CM3_0_app/Debug"/>\r\n</valueVariables>\r\n
+org.eclipse.core.variables.valueVariables=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<valueVariables>\r\n<valueVariable description\="Directory holding debug executable" name\="build_loc" readOnly\="false" value\="C\:/Users/mtstacho/Desktop/LED/SoftConsole/MSS01_MSS_CM3_0/MSS01_MSS_CM3_0_app/Debug"/>\r\n</valueVariables>\r\n
