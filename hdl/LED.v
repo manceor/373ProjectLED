@@ -14,7 +14,8 @@ output reg [31:0] PRDATA, // data to processor from I/O device (32-bits)
 output reg LED
 );
 assign PSLVERR = 0;
-assign PREADY = 1;
+// assign PREADY = 1; Reassigned based on write status
+assign PREADY = ~write_in_progress;
 reg [999:0]color;
 reg [23:0]data_counter;
 reg [7:0]bit_counter;
@@ -29,7 +30,8 @@ always @(posedge PCLK) begin
     // Check for positive edge on PENABLE to indicate that input data is ready
     write_status[1] <= write_status[0];
     write_status[0] <= PENABLE;
-    write_in_progress <= ~write_status[1] | write_status[0];
+    write_in_progress <= ~write_status[1] & write_status[0];
+    
     if(write_in_progress) begin
         // Restart data
         if (bit_counter > num_LEDs * 24) begin
@@ -75,7 +77,7 @@ always @(posedge PCLK) begin
         data_counter <= data_counter + 1;
 
     // Pulse BS
-    end
+    end // end of if (write_in_progress)
 end
 
 always @(posedge PCLK) begin

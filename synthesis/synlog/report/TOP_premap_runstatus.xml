@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>7</data>
+<data>6</data>
 <report_link name="more">
 <data>C:\Users\mtstacho\Desktop\LED\synthesis\synlog\report\TOP_premap_notes.txt</data>
 </report_link>
@@ -40,7 +40,7 @@ The file contains the job information from mapper to be displayed as part of the
 <data>113MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1555027597</data>
+<data type="timestamp">1555350121</data>
 </info>
 </job_info>
 </job_run_status>

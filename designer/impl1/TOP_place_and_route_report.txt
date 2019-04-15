@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Apr 11 20:07:13 2019 ***************************************************************************
+                          Mon Apr 15 13:42:37 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
 File Name: C:\Users\mtstacho\Desktop\LED\designer\impl1\TOP.adb
 Design Name: TOP  Design State: layout
-Last Saved: Thu Apr 11 20:06:54 2019
+Last Saved: Mon Apr 15 13:42:18 2019
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Apr 11 20:06:50 2019:
+Source File(s) Imported on Mon Apr 15 13:42:13 2019:
         C:\Users\mtstacho\Desktop\LED\synthesis\TOP.edn
         C:\Users\mtstacho\Desktop\LED\component\work\TOP\TOP.pdc
 
@@ -412,7 +412,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:    568  Total:   4608   (12.33%)
+    Fabric                     Used:    566  Total:   4608   (12.28%)
     Fabric IO (W/ clocks)      Used:      1  Total:     94   (1.06%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -441,7 +441,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 331          | 331
+    COMB    | 329          | 329
     SEQ     | 237          | 237
 
 I/O Function:
@@ -487,50 +487,50 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162_1
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162_1
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_3
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_3
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_1
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_1
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_2
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_2
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_0
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_0
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162_0
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162_0
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_3
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_3
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_6
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_6
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_2
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_2
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_5
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_5
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_1
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_1
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_4
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_4
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_0
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_0
     19      INT_NET       Net   : LED_VERILOG_0/bit_counter[3]
                           Driver: LED_VERILOG_0/bit_counter[3]
-    18      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0
-                          Driver: LED_VERILOG_0/write_in_progress_0_0
+    18      INT_NET       Net   : LED_VERILOG_0/bit_counter_0[4]
+                          Driver: LED_VERILOG_0/bit_counter_0[4]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162_1
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162_1
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_3
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_3
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_1
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_1
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_2
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_2
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_0
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_0
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162_0
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162_0
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_3
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_3
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_6
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_6
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_2
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_2
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_5
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_5
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_1
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_1
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_4
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_4
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_0
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_0
     19      INT_NET       Net   : LED_VERILOG_0/bit_counter[3]
                           Driver: LED_VERILOG_0/bit_counter[3]
-    18      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0
-                          Driver: LED_VERILOG_0/write_in_progress_0_0
+    18      INT_NET       Net   : LED_VERILOG_0/bit_counter_0[4]
+                          Driver: LED_VERILOG_0/bit_counter_0[4]
 
 
 Layout Output:
@@ -556,16 +556,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Apr 11 20:07:02 2019
+Timing-driven Placer Started: Mon Apr 15 13:42:25 2019
 
-Placer Finished: Thu Apr 11 20:07:05 2019
+Placer Finished: Mon Apr 15 13:42:28 2019
 Total Placer CPU Time:     00:00:03
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: TOP                             Started: Thu Apr 11 20:07:06 2019
+Design: TOP                             Started: Mon Apr 15 13:42:30 2019
 
  
 Iterative improvement...
@@ -573,11 +573,12 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: TOP                             
-Finished: Thu Apr 11 20:07:11 2019
+Finished: Mon Apr 15 13:42:35 2019
 Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
-Total Memory Usage: 173.2 Mbytes
+Total Memory Usage: 173.7 Mbytes
                         o - o - o - o - o - o
 
+status 257
 status 257
 
 

@@ -4806,3 +4806,18 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:/Users/mtstacho/D
 
 !ENTRY org.eclipse.core.resources 2 10035 2019-04-11 19:25:54.356
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2019-04-15 13:20:44.922 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:/Users/mtstacho/Desktop/LED/SoftConsole/MSS01_MSS_CM3_0
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2019-04-15 13:21:01.730
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2019-04-15 13:21:01.777
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2019-04-15 13:21:01.840
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.

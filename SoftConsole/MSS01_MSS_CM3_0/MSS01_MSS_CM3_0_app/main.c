@@ -30,21 +30,10 @@ int main()
 	*LED6 = off;
 	*LED7 = blue;
 	*LED8 = off;
-	/*int test = 0;
-	int i;
-	while(1){
-		if(test){
-			test = 0;
-			LED1[7] = red;
-		} else {
-			test = 1;
-			*LED8 = off;
-		}
 
-		for (i = 0; i < 10000000; ++i){
-		}
-	}
-	*/
+	while(1){}
+
+
 
 	return 0;
 }

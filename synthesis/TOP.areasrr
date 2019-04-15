@@ -2,13 +2,14 @@
 Report for cell TOP.verilog
                                           Cell usage:
                                cell       count     area    count*area
+                        CoreAPB3_Z1         1       3.0        3.0
                                 GND         1       0.0        0.0
-                        LED_VERILOG         1     569.0      569.0
+                        LED_VERILOG         1     564.0      564.0
                               MSS01         1       0.0        0.0
                              OUTBUF         1       0.0        0.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL              5                569.0
+                         TOTAL              6                567.0
 ----------------------------------------------------------------------
 Report for cell MSS01.netlist
      Instance path:  MSS01_0
@@ -37,34 +38,59 @@ Report for cell LED_VERILOG.netlist
      Instance path:  LED_VERILOG_0
                                           Cell usage:
                                cell       count     area    count*area
-                                AO1         4       1.0        4.0
-                               AO1A         1       1.0        1.0
+                                AO1         2       1.0        2.0
                                AO1C         1       1.0        1.0
-                               AO1D         1       1.0        1.0
-                               AX1C        13       1.0       13.0
+                               AO1D         2       1.0        2.0
+                              AOI1B         1       1.0        1.0
+                               AX1C        12       1.0       12.0
                              CLKINT         2       0.0        0.0
                                DFN1         5       1.0        5.0
                              DFN1E0         7       1.0        7.0
                              DFN1E1       225       1.0      225.0
                                 GND         1       0.0        0.0
                                 MX2       188       1.0      188.0
-                               NOR2         7       1.0        7.0
-                              NOR2A         4       1.0        4.0
-                              NOR2B        18       1.0       18.0
-                               NOR3         3       1.0        3.0
-                              NOR3A        10       1.0       10.0
-                              NOR3B        11       1.0       11.0
-                              NOR3C        28       1.0       28.0
+                               NOR2         6       1.0        6.0
+                              NOR2A         7       1.0        7.0
+                              NOR2B        22       1.0       22.0
+                               NOR3         1       1.0        1.0
+                              NOR3A         6       1.0        6.0
+                              NOR3B         9       1.0        9.0
+                              NOR3C        21       1.0       21.0
+                                OA1         5       1.0        5.0
+                               OA1A         2       1.0        2.0
                                OA1C         1       1.0        1.0
-                                OR2         2       1.0        2.0
+                                OR2         3       1.0        3.0
                                OR2A         1       1.0        1.0
-                               OR2B         4       1.0        4.0
-                                OR3         5       1.0        5.0
-                               OR3A         3       1.0        3.0
-                               OR3B         2       1.0        2.0
+                               OR2B         3       1.0        3.0
+                                OR3         4       1.0        4.0
+                               OR3A         1       1.0        1.0
+                               OR3B         3       1.0        3.0
                                OR3C         1       1.0        1.0
                                 VCC         1       0.0        0.0
-                               XA1B        11       1.0       11.0
+                                XA1         6       1.0        6.0
+                               XA1B         6       1.0        6.0
                                XOR2        13       1.0       13.0
                             
-                         TOTAL            573                569.0
+                         TOTAL            568                564.0
+----------------------------------------------------------------------
+Report for cell CoreAPB3_Z1.netlist
+     Instance path:  CoreAPB3_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                            CAPB3II         1       1.0        1.0
+                                GND         1       0.0        0.0
+                               NOR2         1       1.0        1.0
+                              NOR3A         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              5                  3.0
+----------------------------------------------------------------------
+Report for cell CAPB3II.netlist
+     Instance path:  CoreAPB3_0.CAPB3IIII
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                               OR3C         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              3                  1.0

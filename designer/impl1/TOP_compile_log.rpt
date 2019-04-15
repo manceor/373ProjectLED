@@ -17,7 +17,7 @@ Imported the files:
    C:\Users\mtstacho\Desktop\LED\synthesis\TOP.edn
    C:\Users\mtstacho\Desktop\LED\component\work\TOP\TOP.pdc
 
-The Import command succeeded ( 00:00:01 )
+The Import command succeeded ( 00:00:02 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -387,7 +387,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:    568  Total:   4608   (12.33%)
+    Fabric                     Used:    566  Total:   4608   (12.28%)
     Fabric IO (W/ clocks)      Used:      1  Total:     94   (1.06%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -416,7 +416,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 331          | 331
+    COMB    | 329          | 329
     SEQ     | 237          | 237
 
 I/O Function:
@@ -462,63 +462,63 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162_1
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162_1
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_3
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_3
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_1
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_1
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_2
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_2
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_0
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_0
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162_0
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162_0
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_3
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_3
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_6
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_6
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_2
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_2
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_5
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_5
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_1
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_1
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_4
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_4
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_0
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_0
     19      INT_NET       Net   : LED_VERILOG_0/bit_counter[3]
                           Driver: LED_VERILOG_0/bit_counter[3]
-    18      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0
-                          Driver: LED_VERILOG_0/write_in_progress_0_0
+    18      INT_NET       Net   : LED_VERILOG_0/bit_counter_0[4]
+                          Driver: LED_VERILOG_0/bit_counter_0[4]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162_1
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162_1
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_3
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_3
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_1
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_1
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_2
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_2
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2_0
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2_0
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_RNIMHDE2
-                          Driver: LED_VERILOG_0/write_in_progress_RNIMHDE2
-    24      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0_0_RNIKE162_0
-                          Driver: LED_VERILOG_0/write_in_progress_0_0_RNIKE162_0
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_3
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_3
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_6
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_6
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_2
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_2
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_5
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_5
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_1
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_1
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_4
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_4
+    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_0
+                          Driver: LED_VERILOG_0/color_write_RNI6RK31_0
     19      INT_NET       Net   : LED_VERILOG_0/bit_counter[3]
                           Driver: LED_VERILOG_0/bit_counter[3]
-    18      INT_NET       Net   : LED_VERILOG_0/write_in_progress_0
-                          Driver: LED_VERILOG_0/write_in_progress_0_0
+    18      INT_NET       Net   : LED_VERILOG_0/bit_counter_0[4]
+                          Driver: LED_VERILOG_0/bit_counter_0[4]
 
-The Compile command succeeded ( 00:00:01 )
+The Compile command succeeded ( 00:00:00 )
 Wrote status report to file: TOP_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: TOP_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote pin report to file: TOP_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 Design saved to file C:\Users\mtstacho\Desktop\LED\designer\impl1\TOP.adb.
 
-The Execute Script command succeeded ( 00:00:04 )
+The Execute Script command succeeded ( 00:00:05 )
 Design closed.
 
