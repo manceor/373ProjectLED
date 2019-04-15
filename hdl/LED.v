@@ -15,14 +15,14 @@ output reg LED
 );
 assign PSLVERR = 0;
 // assign PREADY = 1; Reassigned based on write status
-assign PREADY = ~write_in_progress;
+assign PREADY = 1;
+//assign PREADY = ~write_in_progress;
 reg [999:0]color;
-reg [23:0]data_counter;
 reg [7:0]bit_counter;
 reg [6:0]pwm_counter;
 reg write_in_progress;
 // Initializing stuff
-wire color_write = (PWRITE & PENABLE & PSEL & write_in_progress);
+wire color_write = (PWRITE & PENABLE & PSEL);
 reg [1:0]write_status;
 reg [3:0]num_LEDs = 8;
 
@@ -30,26 +30,22 @@ always @(posedge PCLK) begin
     // Check for positive edge on PENABLE to indicate that input data is ready
     write_status[1] <= write_status[0];
     write_status[0] <= PENABLE;
-    write_in_progress <= ~write_status[1] & write_status[0];
+    write_in_progress <= ~(write_status[1]) & write_status[0];
     
     if(write_in_progress) begin
-        // Restart data
+        // Check if all LED's have been written
         if (bit_counter > num_LEDs * 24) begin
-            data_counter <= 0;
             bit_counter <= 0;
             write_in_progress <= 0;
-        end
-        // Reset code
-        else if (data_counter >= 24125) begin
             LED <= 0;
         end
-
 
         // Write a single bit
         // 125 clock cycles per bit
         // Write a 1: high for 80 low for 45
         // Write a 0: high for 40 low for 85
         else begin
+            // A full bit has been written, reset and increment bit_counter
             if(pwm_counter >= 125) begin
                 pwm_counter <= 0;
                 bit_counter <= bit_counter + 1;
@@ -74,7 +70,7 @@ always @(posedge PCLK) begin
                 end
             end
         end
-        data_counter <= data_counter + 1;
+       
 
     // Pulse BS
     end // end of if (write_in_progress)
@@ -94,9 +90,6 @@ always @(posedge PCLK) begin
         endcase
     end
 end
-
-
-
 
 endmodule
 

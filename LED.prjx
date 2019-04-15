@@ -360,8 +360,8 @@ SIZE="709632"
 ENDFILE
 VALUE "<project>\designer\impl1\TOP.fdb,fdb"
 STATE="utd"
-TIME="1555348552"
-SIZE="51991"
+TIME="1555353066"
+SIZE="49870"
 ENDFILE
 VALUE "<project>\designer\impl1\TOP.ide_des,ide_des"
 STATE="utd"
@@ -370,8 +370,8 @@ SIZE="1007"
 ENDFILE
 VALUE "<project>\designer\impl1\TOP_compile_log.rpt,log"
 STATE="utd"
-TIME="1555348552"
-SIZE="30834"
+TIME="1555352309"
+SIZE="30242"
 ENDFILE
 VALUE "<project>\designer\impl1\TOP_fp\projectData\TOP.pdb,pdb"
 STATE="utd"
@@ -390,23 +390,23 @@ SIZE="2333"
 ENDFILE
 VALUE "<project>\designer\impl1\TOP_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1555348552"
-SIZE="2588"
+TIME="1555353049"
+SIZE="2575"
 ENDFILE
 VALUE "<project>\designer\impl1\TOP_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1555348552"
+TIME="1555353066"
 SIZE="608"
 ENDFILE
 VALUE "<project>\designer\impl1\TOP_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1555348552"
+TIME="1555353055"
 SIZE="1092"
 ENDFILE
 VALUE "<project>\hdl\LED.v,hdl"
 STATE="utd"
-TIME="1555348552"
-SIZE="3159"
+TIME="1555353004"
+SIZE="3194"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -640,10 +640,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole"
+NAME="SoftConsole33"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="eclipse.exe"
+LOCATION="C:\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
 PARAM=""
 BATCH=0
 LICENSE=""
@@ -653,8 +653,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -726,8 +726,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:TOP_prgdata_log.rpt
+SmartDesign;MSS01;0
+HDL;hdl\LED.v;0
+SmartDesign;TOP;0
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
@@ -798,9 +803,9 @@ ENDLIST
 LIST "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
 ENDLIST
 LIST "TOP::work","component\work\TOP\TOP.v","TRUE","FALSE"
-SUBBLOCK "LED_VERILOG::work","hdl\LED.v","FALSE","FALSE"
 SUBBLOCK "MSS01::work","component\work\MSS01\MSS01.v","TRUE","FALSE"
 SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
+SUBBLOCK "LED_VERILOG::work","hdl\LED.v","FALSE","FALSE"
 ENDLIST
 LIST "TRIBUFF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST

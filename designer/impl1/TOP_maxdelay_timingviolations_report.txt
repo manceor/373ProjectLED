@@ -2,7 +2,7 @@ Timing Violation Report Max Delay Analysis
 
 SmartTime Version v11.9
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
-Date: Mon Apr 15 13:42:45 2019
+Date: Mon Apr 15 14:30:55 2019
 
 
 Design: TOP
@@ -23,504 +23,208 @@ Scenario for Timing Analysis: Primary
 Path 1
   From:                  LED_VERILOG_0/bit_counter[7]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            11.576
-  Slack (ns):            -2.031
-  Arrival (ns):          16.789
-  Required (ns):         14.758
+  Delay (ns):            11.645
+  Slack (ns):            -2.046
+  Arrival (ns):          16.858
+  Required (ns):         14.812
 
 Path 2
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[147]:E
-  Delay (ns):            13.072
-  Slack (ns):            -1.784
-  Arrival (ns):          16.627
-  Required (ns):         14.843
+  From:                  LED_VERILOG_0/bit_counter[5]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            11.072
+  Slack (ns):            -1.491
+  Arrival (ns):          16.303
+  Required (ns):         14.812
 
 Path 3
-  From:                  LED_VERILOG_0/data_counter[3]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            11.158
-  Slack (ns):            -1.666
-  Arrival (ns):          16.424
-  Required (ns):         14.758
+  From:                  LED_VERILOG_0/bit_counter[4]:CLK
+  To:                    LED_VERILOG_0/bit_counter[7]:D
+  Delay (ns):            10.220
+  Slack (ns):            -0.799
+  Arrival (ns):          15.522
+  Required (ns):         14.723
 
 Path 4
-  From:                  LED_VERILOG_0/data_counter[1]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            11.140
-  Slack (ns):            -1.648
-  Arrival (ns):          16.406
-  Required (ns):         14.758
+  From:                  LED_VERILOG_0/bit_counter[7]:CLK
+  To:                    LED_VERILOG_0/bit_counter[7]:D
+  Delay (ns):            10.110
+  Slack (ns):            -0.600
+  Arrival (ns):          15.323
+  Required (ns):         14.723
 
 Path 5
-  From:                  LED_VERILOG_0/data_counter[0]:CLK
+  From:                  LED_VERILOG_0/color[135]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            11.126
-  Slack (ns):            -1.604
-  Arrival (ns):          16.362
-  Required (ns):         14.758
+  Delay (ns):            9.876
+  Slack (ns):            -0.388
+  Arrival (ns):          15.168
+  Required (ns):         14.780
 
 Path 6
-  From:                  LED_VERILOG_0/data_counter[4]:CLK
+  From:                  LED_VERILOG_0/color[7]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            10.844
-  Slack (ns):            -1.348
-  Arrival (ns):          16.106
-  Required (ns):         14.758
+  Delay (ns):            9.873
+  Slack (ns):            -0.383
+  Arrival (ns):          15.163
+  Required (ns):         14.780
 
 Path 7
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[158]:E
-  Delay (ns):            12.468
-  Slack (ns):            -1.105
-  Arrival (ns):          16.023
-  Required (ns):         14.918
+  From:                  LED_VERILOG_0/color[39]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            9.866
+  Slack (ns):            -0.378
+  Arrival (ns):          15.158
+  Required (ns):         14.780
 
 Path 8
-  From:                  LED_VERILOG_0/data_counter[13]:CLK
+  From:                  LED_VERILOG_0/color[167]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            10.519
-  Slack (ns):            -1.032
-  Arrival (ns):          15.790
-  Required (ns):         14.758
+  Delay (ns):            9.869
+  Slack (ns):            -0.354
+  Arrival (ns):          15.134
+  Required (ns):         14.780
 
 Path 9
   From:                  LED_VERILOG_0/bit_counter[5]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            10.553
-  Slack (ns):            -1.026
-  Arrival (ns):          15.784
-  Required (ns):         14.758
-
-Path 10
-  From:                  LED_VERILOG_0/data_counter[9]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            10.379
-  Slack (ns):            -0.892
-  Arrival (ns):          15.650
-  Required (ns):         14.758
-
-Path 11
-  From:                  LED_VERILOG_0/data_counter[8]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            10.324
-  Slack (ns):            -0.837
-  Arrival (ns):          15.595
-  Required (ns):         14.758
-
-Path 12
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[166]:E
-  Delay (ns):            12.178
-  Slack (ns):            -0.832
-  Arrival (ns):          15.733
-  Required (ns):         14.901
-
-Path 13
-  From:                  LED_VERILOG_0/data_counter[3]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[1]:D
-  Delay (ns):            10.231
-  Slack (ns):            -0.775
-  Arrival (ns):          15.497
-  Required (ns):         14.722
-
-Path 14
-  From:                  LED_VERILOG_0/data_counter[1]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[1]:D
-  Delay (ns):            10.213
-  Slack (ns):            -0.757
-  Arrival (ns):          15.479
-  Required (ns):         14.722
-
-Path 15
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[177]:E
-  Delay (ns):            12.065
-  Slack (ns):            -0.730
-  Arrival (ns):          15.620
-  Required (ns):         14.890
-
-Path 16
-  From:                  LED_VERILOG_0/data_counter[0]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[1]:D
-  Delay (ns):            10.199
-  Slack (ns):            -0.713
-  Arrival (ns):          15.435
-  Required (ns):         14.722
-
-Path 17
-  From:                  LED_VERILOG_0/data_counter[2]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            10.127
-  Slack (ns):            -0.635
-  Arrival (ns):          15.393
-  Required (ns):         14.758
-
-Path 18
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[57]:E
-  Delay (ns):            11.942
-  Slack (ns):            -0.590
-  Arrival (ns):          15.497
-  Required (ns):         14.907
-
-Path 19
-  From:                  LED_VERILOG_0/data_counter[11]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            10.072
-  Slack (ns):            -0.585
-  Arrival (ns):          15.343
-  Required (ns):         14.758
-
-Path 20
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[56]:E
-  Delay (ns):            11.952
-  Slack (ns):            -0.582
-  Arrival (ns):          15.507
-  Required (ns):         14.925
-
-Path 21
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[49]:E
-  Delay (ns):            11.913
-  Slack (ns):            -0.557
-  Arrival (ns):          15.468
-  Required (ns):         14.911
-
-Path 22
-  From:                  LED_VERILOG_0/bit_counter_0[4]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.951
-  Slack (ns):            -0.520
-  Arrival (ns):          15.278
-  Required (ns):         14.758
-
-Path 23
-  From:                  LED_VERILOG_0/data_counter[3]:CLK
-  To:                    LED_VERILOG_0/bit_counter[5]:E
-  Delay (ns):            10.084
-  Slack (ns):            -0.514
-  Arrival (ns):          15.350
-  Required (ns):         14.836
-
-Path 24
-  From:                  LED_VERILOG_0/data_counter[3]:CLK
-  To:                    LED_VERILOG_0/bit_counter[7]:E
-  Delay (ns):            10.064
-  Slack (ns):            -0.512
-  Arrival (ns):          15.330
-  Required (ns):         14.818
-
-Path 25
-  From:                  LED_VERILOG_0/data_counter[3]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[5]:D
-  Delay (ns):            9.958
-  Slack (ns):            -0.495
-  Arrival (ns):          15.224
-  Required (ns):         14.729
-
-Path 26
-  From:                  LED_VERILOG_0/data_counter[1]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[5]:D
-  Delay (ns):            9.940
-  Slack (ns):            -0.477
-  Arrival (ns):          15.206
-  Required (ns):         14.729
-
-Path 27
-  From:                  LED_VERILOG_0/data_counter[4]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[1]:D
-  Delay (ns):            9.917
-  Slack (ns):            -0.457
-  Arrival (ns):          15.179
-  Required (ns):         14.722
-
-Path 28
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[185]:E
-  Delay (ns):            11.798
-  Slack (ns):            -0.446
-  Arrival (ns):          15.353
-  Required (ns):         14.907
-
-Path 29
-  From:                  LED_VERILOG_0/data_counter[0]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[5]:D
-  Delay (ns):            9.926
-  Slack (ns):            -0.433
-  Arrival (ns):          15.162
-  Required (ns):         14.729
-
-Path 30
-  From:                  LED_VERILOG_0/data_counter[1]:CLK
-  To:                    LED_VERILOG_0/bit_counter[5]:E
-  Delay (ns):            9.921
-  Slack (ns):            -0.351
-  Arrival (ns):          15.187
-  Required (ns):         14.836
-
-Path 31
-  From:                  LED_VERILOG_0/data_counter[1]:CLK
-  To:                    LED_VERILOG_0/bit_counter[7]:E
-  Delay (ns):            9.901
-  Slack (ns):            -0.349
-  Arrival (ns):          15.167
-  Required (ns):         14.818
-
-Path 32
-  From:                  LED_VERILOG_0/color[166]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.779
-  Slack (ns):            -0.317
-  Arrival (ns):          15.075
-  Required (ns):         14.758
-
-Path 33
-  From:                  LED_VERILOG_0/data_counter[0]:CLK
-  To:                    LED_VERILOG_0/bit_counter[5]:E
-  Delay (ns):            9.907
-  Slack (ns):            -0.307
-  Arrival (ns):          15.143
-  Required (ns):         14.836
-
-Path 34
-  From:                  LED_VERILOG_0/data_counter[0]:CLK
-  To:                    LED_VERILOG_0/bit_counter[7]:E
-  Delay (ns):            9.887
-  Slack (ns):            -0.305
-  Arrival (ns):          15.123
-  Required (ns):         14.818
-
-Path 35
-  From:                  LED_VERILOG_0/color[134]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.763
-  Slack (ns):            -0.301
-  Arrival (ns):          15.059
-  Required (ns):         14.758
-
-Path 36
-  From:                  LED_VERILOG_0/data_counter[5]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.781
-  Slack (ns):            -0.294
-  Arrival (ns):          15.052
-  Required (ns):         14.758
-
-Path 37
-  From:                  LED_VERILOG_0/data_counter[15]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.820
-  Slack (ns):            -0.291
-  Arrival (ns):          15.049
-  Required (ns):         14.758
-
-Path 38
-  From:                  LED_VERILOG_0/color[6]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.752
-  Slack (ns):            -0.290
-  Arrival (ns):          15.048
-  Required (ns):         14.758
-
-Path 39
-  From:                  LED_VERILOG_0/color[7]:CLK
-  To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.739
-  Slack (ns):            -0.286
-  Arrival (ns):          15.044
-  Required (ns):         14.758
-
-Path 40
-  From:                  LED_VERILOG_0/bit_counter[4]:CLK
   To:                    LED_VERILOG_0/bit_counter[7]:D
-  Delay (ns):            9.769
-  Slack (ns):            -0.284
-  Arrival (ns):          15.007
+  Delay (ns):            9.783
+  Slack (ns):            -0.291
+  Arrival (ns):          15.014
   Required (ns):         14.723
 
-Path 41
-  From:                  LED_VERILOG_0/color[135]:CLK
+Path 10
+  From:                  LED_VERILOG_0/color[158]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.753
-  Slack (ns):            -0.274
-  Arrival (ns):          15.032
-  Required (ns):         14.758
+  Delay (ns):            9.689
+  Slack (ns):            -0.172
+  Arrival (ns):          14.984
+  Required (ns):         14.812
 
-Path 42
-  From:                  LED_VERILOG_0/color[38]:CLK
+Path 11
+  From:                  LED_VERILOG_0/color[30]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.768
-  Slack (ns):            -0.265
-  Arrival (ns):          15.023
-  Required (ns):         14.758
+  Delay (ns):            9.693
+  Slack (ns):            -0.152
+  Arrival (ns):          14.964
+  Required (ns):         14.812
 
-Path 43
-  From:                  LED_VERILOG_0/data_counter[23]:CLK
+Path 12
+  From:                  LED_VERILOG_0/color[127]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.784
-  Slack (ns):            -0.255
-  Arrival (ns):          15.013
-  Required (ns):         14.758
+  Delay (ns):            9.652
+  Slack (ns):            -0.142
+  Arrival (ns):          14.954
+  Required (ns):         14.812
 
-Path 44
-  From:                  LED_VERILOG_0/data_counter[7]:CLK
+Path 13
+  From:                  LED_VERILOG_0/color[95]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.708
-  Slack (ns):            -0.221
-  Arrival (ns):          14.979
-  Required (ns):         14.758
+  Delay (ns):            9.641
+  Slack (ns):            -0.131
+  Arrival (ns):          14.943
+  Required (ns):         14.812
 
-Path 45
-  From:                  LED_VERILOG_0/data_counter[22]:CLK
+Path 14
+  From:                  LED_VERILOG_0/color[111]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.746
-  Slack (ns):            -0.217
-  Arrival (ns):          14.975
-  Required (ns):         14.758
+  Delay (ns):            9.636
+  Slack (ns):            -0.126
+  Arrival (ns):          14.938
+  Required (ns):         14.812
 
-Path 46
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[169]:E
-  Delay (ns):            11.550
-  Slack (ns):            -0.215
-  Arrival (ns):          15.105
-  Required (ns):         14.890
+Path 15
+  From:                  LED_VERILOG_0/color[62]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            9.709
+  Slack (ns):            -0.125
+  Arrival (ns):          14.937
+  Required (ns):         14.812
 
-Path 47
-  From:                  LED_VERILOG_0/data_counter[4]:CLK
-  To:                    LED_VERILOG_0/bit_counter[5]:E
-  Delay (ns):            9.770
-  Slack (ns):            -0.196
-  Arrival (ns):          15.032
-  Required (ns):         14.836
+Path 16
+  From:                  LED_VERILOG_0/color[190]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            9.705
+  Slack (ns):            -0.121
+  Arrival (ns):          14.933
+  Required (ns):         14.812
 
-Path 48
-  From:                  LED_VERILOG_0/data_counter[3]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[6]:D
-  Delay (ns):            9.657
-  Slack (ns):            -0.194
-  Arrival (ns):          14.923
-  Required (ns):         14.729
-
-Path 49
-  From:                  LED_VERILOG_0/data_counter[4]:CLK
-  To:                    LED_VERILOG_0/bit_counter[7]:E
-  Delay (ns):            9.750
-  Slack (ns):            -0.194
-  Arrival (ns):          15.012
-  Required (ns):         14.818
-
-Path 50
-  From:                  LED_VERILOG_0/data_counter[4]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[5]:D
-  Delay (ns):            9.644
-  Slack (ns):            -0.177
-  Arrival (ns):          14.906
-  Required (ns):         14.729
-
-Path 51
-  From:                  LED_VERILOG_0/data_counter[1]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[6]:D
-  Delay (ns):            9.639
-  Slack (ns):            -0.176
-  Arrival (ns):          14.905
-  Required (ns):         14.729
-
-Path 52
-  From:                  LED_VERILOG_0/data_counter[13]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[1]:D
-  Delay (ns):            9.592
-  Slack (ns):            -0.141
-  Arrival (ns):          14.863
-  Required (ns):         14.722
-
-Path 53
-  From:                  LED_VERILOG_0/data_counter[0]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[6]:D
+Path 17
+  From:                  LED_VERILOG_0/color[79]:CLK
+  To:                    LED_VERILOG_0/LED:D
   Delay (ns):            9.625
-  Slack (ns):            -0.132
-  Arrival (ns):          14.861
-  Required (ns):         14.729
+  Slack (ns):            -0.115
+  Arrival (ns):          14.927
+  Required (ns):         14.812
 
-Path 54
-  From:                  LED_VERILOG_0/data_counter[9]:CLK
-  To:                    LED_VERILOG_0/data_counter[23]:D
-  Delay (ns):            9.563
-  Slack (ns):            -0.095
-  Arrival (ns):          14.834
-  Required (ns):         14.739
-
-Path 55
-  From:                  LED_VERILOG_0/data_counter[6]:CLK
-  To:                    LED_VERILOG_0/bit_counter[5]:E
-  Delay (ns):            9.613
-  Slack (ns):            -0.043
-  Arrival (ns):          14.879
-  Required (ns):         14.836
-
-Path 56
-  From:                  LED_VERILOG_0/data_counter[6]:CLK
-  To:                    LED_VERILOG_0/bit_counter[7]:E
-  Delay (ns):            9.593
-  Slack (ns):            -0.041
-  Arrival (ns):          14.859
-  Required (ns):         14.818
-
-Path 57
-  From:                  LED_VERILOG_0/color[184]:CLK
+Path 18
+  From:                  LED_VERILOG_0/color[119]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.474
-  Slack (ns):            -0.036
-  Arrival (ns):          14.794
-  Required (ns):         14.758
+  Delay (ns):            9.636
+  Slack (ns):            -0.102
+  Arrival (ns):          14.914
+  Required (ns):         14.812
 
-Path 58
-  From:                  LED_VERILOG_0/color[56]:CLK
+Path 19
+  From:                  LED_VERILOG_0/color[71]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.466
-  Slack (ns):            -0.028
-  Arrival (ns):          14.786
-  Required (ns):         14.758
+  Delay (ns):            9.609
+  Slack (ns):            -0.099
+  Arrival (ns):          14.911
+  Required (ns):         14.812
 
-Path 59
-  From:                  LED_VERILOG_0/color[152]:CLK
+Path 20
+  From:                  LED_VERILOG_0/color[87]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.458
-  Slack (ns):            -0.020
-  Arrival (ns):          14.778
-  Required (ns):         14.758
+  Delay (ns):            9.625
+  Slack (ns):            -0.091
+  Arrival (ns):          14.903
+  Required (ns):         14.812
 
-Path 60
-  From:                  LED_VERILOG_0/color[24]:CLK
+Path 21
+  From:                  LED_VERILOG_0/bit_counter[0]:CLK
+  To:                    LED_VERILOG_0/bit_counter[7]:D
+  Delay (ns):            9.582
+  Slack (ns):            -0.087
+  Arrival (ns):          14.810
+  Required (ns):         14.723
+
+Path 22
+  From:                  LED_VERILOG_0/color[103]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.450
+  Delay (ns):            9.620
+  Slack (ns):            -0.086
+  Arrival (ns):          14.898
+  Required (ns):         14.812
+
+Path 23
+  From:                  LED_VERILOG_0/color[61]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            9.553
   Slack (ns):            -0.012
-  Arrival (ns):          14.770
-  Required (ns):         14.758
+  Arrival (ns):          14.824
+  Required (ns):         14.812
 
-Path 61
-  From:                  MSS01_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    LED_VERILOG_0/color[181]:E
-  Delay (ns):            11.357
-  Slack (ns):            -0.005
-  Arrival (ns):          14.912
-  Required (ns):         14.907
-
-Path 62
-  From:                  LED_VERILOG_0/data_counter[9]:CLK
-  To:                    LED_VERILOG_0/pwm_counter[1]:D
-  Delay (ns):            9.452
-  Slack (ns):            -0.001
-  Arrival (ns):          14.723
-  Required (ns):         14.722
-
-Path 63
-  From:                  LED_VERILOG_0/color[168]:CLK
+Path 24
+  From:                  LED_VERILOG_0/color[173]:CLK
   To:                    LED_VERILOG_0/LED:D
-  Delay (ns):            9.452
-  Slack (ns):            0.000
-  Arrival (ns):          14.758
-  Required (ns):         14.758
+  Delay (ns):            9.548
+  Slack (ns):            -0.007
+  Arrival (ns):          14.819
+  Required (ns):         14.812
+
+Path 25
+  From:                  LED_VERILOG_0/color[141]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            9.532
+  Slack (ns):            -0.005
+  Arrival (ns):          14.817
+  Required (ns):         14.812
+
+Path 26
+  From:                  LED_VERILOG_0/bit_counter_0[4]:CLK
+  To:                    LED_VERILOG_0/LED:D
+  Delay (ns):            9.511
+  Slack (ns):            -0.001
+  Arrival (ns):          14.813
+  Required (ns):         14.812
 

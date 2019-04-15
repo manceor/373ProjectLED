@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Apr 15 13:42:25 2019
+Timing-driven Placer Started: Mon Apr 15 14:30:36 2019
 
-Placer Finished: Mon Apr 15 13:42:28 2019
+Placer Finished: Mon Apr 15 14:30:39 2019
 Total Placer CPU Time:     00:00:03
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: TOP                             Started: Mon Apr 15 13:42:30 2019
+Design: TOP                             Started: Mon Apr 15 14:30:40 2019
 
  
 Iterative improvement...
@@ -50,13 +50,11 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: TOP                             
-Finished: Mon Apr 15 13:42:35 2019
+Finished: Mon Apr 15 14:30:45 2019
 Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
-Total Memory Usage: 173.7 Mbytes
+Total Memory Usage: 172.0 Mbytes
                         o - o - o - o - o - o
 
-status 257
-status 257
 Loading the Timing data for the design.
 Finished loading the Timing data.
 TIMER: Max delay timing requirements have NOT been met.
@@ -83,6 +81,6 @@ Wrote pin report to file: TOP_report_pin_bynumber.txt
 The Report command succeeded ( 00:00:01 )
 Design saved to file C:\Users\mtstacho\Desktop\LED\designer\impl1\TOP.adb.
 
-The Execute Script command succeeded ( 00:00:17 )
+The Execute Script command succeeded ( 00:00:16 )
 Design closed.
 

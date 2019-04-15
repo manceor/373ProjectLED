@@ -3,37 +3,37 @@ MSS01_MSS_CM3_0_app:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         000005b4  20000000  20000000  00008000  2**4
+  0 .text         000005a0  20000000  20000000  00008000  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000004  200005b4  200005b4  000085b4  2**2
+  1 .data         00000004  200005a0  200005a0  000085a0  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .bss          00000008  200005b8  200005b8  000085b8  2**0
+  2 .bss          00000004  200005a4  200005a4  000085a4  2**0
                   ALLOC
-  3 .stack        00003000  200005c0  200005c0  000085b8  2**0
+  3 .stack        00003000  200005a8  200005a8  000085a4  2**0
                   ALLOC
-  4 .comment      00000081  00000000  00000000  000085b8  2**0
+  4 .comment      00000081  00000000  00000000  000085a4  2**0
                   CONTENTS, READONLY
-  5 .debug_aranges 000000f8  00000000  00000000  00008639  2**0
+  5 .debug_aranges 000000f8  00000000  00000000  00008625  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_pubnames 000001ba  00000000  00000000  00008731  2**0
+  6 .debug_pubnames 000001ba  00000000  00000000  0000871d  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_info   00000d0d  00000000  00000000  000088eb  2**0
+  7 .debug_info   00000d19  00000000  00000000  000088d7  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_abbrev 000002ab  00000000  00000000  000095f8  2**0
+  8 .debug_abbrev 000002ba  00000000  00000000  000095f0  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_line   00000809  00000000  00000000  000098a3  2**0
+  9 .debug_line   00000806  00000000  00000000  000098aa  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_frame  000002f8  00000000  00000000  0000a0ac  2**2
+ 10 .debug_frame  000002f8  00000000  00000000  0000a0b0  2**2
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_str    0000067a  00000000  00000000  0000a3a4  2**0
+ 11 .debug_str    0000067a  00000000  00000000  0000a3a8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_loc    00000496  00000000  00000000  0000aa1e  2**0
+ 12 .debug_loc    00000496  00000000  00000000  0000aa22  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_macinfo 0000cd2c  00000000  00000000  0000aeb4  2**0
+ 13 .debug_macinfo 0000cd2c  00000000  00000000  0000aeb8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .ARM.attributes 00000025  00000000  00000000  00017be0  2**0
+ 14 .ARM.attributes 00000025  00000000  00000000  00017be4  2**0
                   CONTENTS, READONLY
- 15 .debug_ranges 000000e0  00000000  00000000  00017c05  2**0
+ 15 .debug_ranges 000000e0  00000000  00000000  00017c09  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -715,22 +715,22 @@ Disassembly of section .text:
 20000438 <ACE_PPE_Flag31_IRQHandler>:
 20000438:	e7fe      	b.n	20000438 <ACE_PPE_Flag31_IRQHandler>
 2000043a:	0000      	.short	0x0000
-2000043c:	20000539 	.word	0x20000539
+2000043c:	20000525 	.word	0x20000525
 20000440:	00000000 	.word	0x00000000
 20000444:	20000000 	.word	0x20000000
 20000448:	20000000 	.word	0x20000000
-2000044c:	200005b4 	.word	0x200005b4
-20000450:	200005b4 	.word	0x200005b4
-20000454:	200005b4 	.word	0x200005b4
-20000458:	200005b8 	.word	0x200005b8
+2000044c:	200005a0 	.word	0x200005a0
+20000450:	200005a0 	.word	0x200005a0
+20000454:	200005a0 	.word	0x200005a0
+20000458:	200005a4 	.word	0x200005a4
 2000045c:	00000000 	.word	0x00000000
-20000460:	200005b8 	.word	0x200005b8
-20000464:	200005c0 	.word	0x200005c0
-20000468:	20000545 	.word	0x20000545
+20000460:	200005a4 	.word	0x200005a4
+20000464:	200005a8 	.word	0x200005a8
+20000468:	20000531 	.word	0x20000531
 2000046c:	200004a1 	.word	0x200004a1
 
 20000470 <__do_global_dtors_aux>:
-20000470:	f240 53b8 	movw	r3, #1464	; 0x5b8
+20000470:	f240 53a4 	movw	r3, #1444	; 0x5a4
 20000474:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000478:	781a      	ldrb	r2, [r3, #0]
 2000047a:	b90a      	cbnz	r2, 20000480 <__do_global_dtors_aux+0x10>
@@ -740,7 +740,7 @@ Disassembly of section .text:
 20000482:	bf00      	nop
 
 20000484 <frame_dummy>:
-20000484:	f240 50b4 	movw	r0, #1460	; 0x5b4
+20000484:	f240 50a0 	movw	r0, #1440	; 0x5a0
 20000488:	f2c2 0000 	movt	r0, #8192	; 0x2000
 2000048c:	b508      	push	{r3, lr}
 2000048e:	6803      	ldr	r3, [r0, #0]
@@ -759,145 +759,137 @@ Disassembly of section .text:
 int main()
 {
 200004a0:	b480      	push	{r7}
-200004a2:	b089      	sub	sp, #36	; 0x24
+200004a2:	b08b      	sub	sp, #44	; 0x2c
 200004a4:	af00      	add	r7, sp, #0
 	uint32_t* LED1 = (uint32_t*)LED1_ADDR;
 200004a6:	f240 0300 	movw	r3, #0
 200004aa:	f2c4 0305 	movt	r3, #16389	; 0x4005
-200004ae:	603b      	str	r3, [r7, #0]
+200004ae:	607b      	str	r3, [r7, #4]
 	uint32_t* LED2 = (uint32_t*)LED2_ADDR;
 200004b0:	f240 0304 	movw	r3, #4
 200004b4:	f2c4 0305 	movt	r3, #16389	; 0x4005
-200004b8:	607b      	str	r3, [r7, #4]
+200004b8:	60bb      	str	r3, [r7, #8]
 	uint32_t* LED3 = (uint32_t*)LED3_ADDR;
 200004ba:	f240 0308 	movw	r3, #8
 200004be:	f2c4 0305 	movt	r3, #16389	; 0x4005
-200004c2:	60bb      	str	r3, [r7, #8]
+200004c2:	60fb      	str	r3, [r7, #12]
 	uint32_t* LED4 = (uint32_t*)LED4_ADDR;
 200004c4:	f240 030c 	movw	r3, #12
 200004c8:	f2c4 0305 	movt	r3, #16389	; 0x4005
-200004cc:	60fb      	str	r3, [r7, #12]
+200004cc:	613b      	str	r3, [r7, #16]
 	uint32_t* LED5 = (uint32_t*)LED5_ADDR;
 200004ce:	f240 0310 	movw	r3, #16
 200004d2:	f2c4 0305 	movt	r3, #16389	; 0x4005
-200004d6:	613b      	str	r3, [r7, #16]
+200004d6:	617b      	str	r3, [r7, #20]
 	uint32_t* LED6 = (uint32_t*)LED6_ADDR;
 200004d8:	f240 0314 	movw	r3, #20
 200004dc:	f2c4 0305 	movt	r3, #16389	; 0x4005
-200004e0:	617b      	str	r3, [r7, #20]
+200004e0:	61bb      	str	r3, [r7, #24]
 	uint32_t* LED7 = (uint32_t*)LED7_ADDR;
 200004e2:	f240 0318 	movw	r3, #24
 200004e6:	f2c4 0305 	movt	r3, #16389	; 0x4005
-200004ea:	61bb      	str	r3, [r7, #24]
+200004ea:	61fb      	str	r3, [r7, #28]
 	uint32_t* LED8 = (uint32_t*)LED8_ADDR;
 200004ec:	f240 031c 	movw	r3, #28
 200004f0:	f2c4 0305 	movt	r3, #16389	; 0x4005
-200004f4:	61fb      	str	r3, [r7, #28]
-	*LED1 = blue;
-200004f6:	683b      	ldr	r3, [r7, #0]
-200004f8:	f44f 027f 	mov.w	r2, #16711680	; 0xff0000
-200004fc:	601a      	str	r2, [r3, #0]
-	*LED2 = off;
-200004fe:	687b      	ldr	r3, [r7, #4]
-20000500:	f04f 0200 	mov.w	r2, #0
-20000504:	601a      	str	r2, [r3, #0]
-	*LED3 = blue;
-20000506:	68bb      	ldr	r3, [r7, #8]
-20000508:	f44f 027f 	mov.w	r2, #16711680	; 0xff0000
-2000050c:	601a      	str	r2, [r3, #0]
-	*LED4 = off;
-2000050e:	68fb      	ldr	r3, [r7, #12]
-20000510:	f04f 0200 	mov.w	r2, #0
-20000514:	601a      	str	r2, [r3, #0]
-	*LED5 = blue;
-20000516:	693b      	ldr	r3, [r7, #16]
-20000518:	f44f 027f 	mov.w	r2, #16711680	; 0xff0000
-2000051c:	601a      	str	r2, [r3, #0]
+200004f4:	623b      	str	r3, [r7, #32]
 	*LED6 = off;
-2000051e:	697b      	ldr	r3, [r7, #20]
-20000520:	f04f 0200 	mov.w	r2, #0
-20000524:	601a      	str	r2, [r3, #0]
 	*LED7 = blue;
-20000526:	69bb      	ldr	r3, [r7, #24]
-20000528:	f44f 027f 	mov.w	r2, #16711680	; 0xff0000
-2000052c:	601a      	str	r2, [r3, #0]
 	*LED8 = off;
-2000052e:	69fb      	ldr	r3, [r7, #28]
-20000530:	f04f 0200 	mov.w	r2, #0
-20000534:	601a      	str	r2, [r3, #0]
+	*/
 
-	while(1){}
-20000536:	e7fe      	b.n	20000536 <main+0x96>
+	int i = 0;
+200004f6:	f04f 0300 	mov.w	r3, #0
+200004fa:	627b      	str	r3, [r7, #36]	; 0x24
+	while(1){
+		*LED1 = red;
+200004fc:	687b      	ldr	r3, [r7, #4]
+200004fe:	f44f 427f 	mov.w	r2, #65280	; 0xff00
+20000502:	601a      	str	r2, [r3, #0]
+		for(i = 0; i < 100000; ++i){}
+20000504:	f04f 0300 	mov.w	r3, #0
+20000508:	627b      	str	r3, [r7, #36]	; 0x24
+2000050a:	e003      	b.n	20000514 <main+0x74>
+2000050c:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+2000050e:	f103 0301 	add.w	r3, r3, #1
+20000512:	627b      	str	r3, [r7, #36]	; 0x24
+20000514:	6a7a      	ldr	r2, [r7, #36]	; 0x24
+20000516:	f248 639f 	movw	r3, #34463	; 0x869f
+2000051a:	f2c0 0301 	movt	r3, #1
+2000051e:	429a      	cmp	r2, r3
+20000520:	ddf4      	ble.n	2000050c <main+0x6c>
+	}
+20000522:	e7eb      	b.n	200004fc <main+0x5c>
 
-20000538 <SystemInit>:
+20000524 <SystemInit>:
 
 /***************************************************************************//**
  * See system_a2fxxxm3f.h for details.
  */
 void SystemInit(void)
 {
-20000538:	b480      	push	{r7}
-2000053a:	af00      	add	r7, sp, #0
+20000524:	b480      	push	{r7}
+20000526:	af00      	add	r7, sp, #0
     /*
      * Do not make use of global variables or make any asumptions regarding
      * memory content if modifying this function. The memory content has not been
      * initialised by the time this function is called by the start-up code.
      */
 }
-2000053c:	46bd      	mov	sp, r7
-2000053e:	bc80      	pop	{r7}
-20000540:	4770      	bx	lr
-20000542:	bf00      	nop
+20000528:	46bd      	mov	sp, r7
+2000052a:	bc80      	pop	{r7}
+2000052c:	4770      	bx	lr
+2000052e:	bf00      	nop
 
-20000544 <__libc_init_array>:
-20000544:	b570      	push	{r4, r5, r6, lr}
-20000546:	f240 56ac 	movw	r6, #1452	; 0x5ac
-2000054a:	f240 55ac 	movw	r5, #1452	; 0x5ac
-2000054e:	f2c2 0600 	movt	r6, #8192	; 0x2000
-20000552:	f2c2 0500 	movt	r5, #8192	; 0x2000
-20000556:	1b76      	subs	r6, r6, r5
-20000558:	10b6      	asrs	r6, r6, #2
-2000055a:	d006      	beq.n	2000056a <__libc_init_array+0x26>
-2000055c:	2400      	movs	r4, #0
-2000055e:	f855 3024 	ldr.w	r3, [r5, r4, lsl #2]
-20000562:	3401      	adds	r4, #1
-20000564:	4798      	blx	r3
-20000566:	42a6      	cmp	r6, r4
-20000568:	d8f9      	bhi.n	2000055e <__libc_init_array+0x1a>
-2000056a:	f240 55ac 	movw	r5, #1452	; 0x5ac
-2000056e:	f240 56b0 	movw	r6, #1456	; 0x5b0
-20000572:	f2c2 0500 	movt	r5, #8192	; 0x2000
-20000576:	f2c2 0600 	movt	r6, #8192	; 0x2000
-2000057a:	1b76      	subs	r6, r6, r5
-2000057c:	f000 f80a 	bl	20000594 <_init>
-20000580:	10b6      	asrs	r6, r6, #2
-20000582:	d006      	beq.n	20000592 <__libc_init_array+0x4e>
-20000584:	2400      	movs	r4, #0
-20000586:	f855 3024 	ldr.w	r3, [r5, r4, lsl #2]
-2000058a:	3401      	adds	r4, #1
-2000058c:	4798      	blx	r3
-2000058e:	42a6      	cmp	r6, r4
-20000590:	d8f9      	bhi.n	20000586 <__libc_init_array+0x42>
-20000592:	bd70      	pop	{r4, r5, r6, pc}
+20000530 <__libc_init_array>:
+20000530:	b570      	push	{r4, r5, r6, lr}
+20000532:	f240 5698 	movw	r6, #1432	; 0x598
+20000536:	f240 5598 	movw	r5, #1432	; 0x598
+2000053a:	f2c2 0600 	movt	r6, #8192	; 0x2000
+2000053e:	f2c2 0500 	movt	r5, #8192	; 0x2000
+20000542:	1b76      	subs	r6, r6, r5
+20000544:	10b6      	asrs	r6, r6, #2
+20000546:	d006      	beq.n	20000556 <__libc_init_array+0x26>
+20000548:	2400      	movs	r4, #0
+2000054a:	f855 3024 	ldr.w	r3, [r5, r4, lsl #2]
+2000054e:	3401      	adds	r4, #1
+20000550:	4798      	blx	r3
+20000552:	42a6      	cmp	r6, r4
+20000554:	d8f9      	bhi.n	2000054a <__libc_init_array+0x1a>
+20000556:	f240 5598 	movw	r5, #1432	; 0x598
+2000055a:	f240 569c 	movw	r6, #1436	; 0x59c
+2000055e:	f2c2 0500 	movt	r5, #8192	; 0x2000
+20000562:	f2c2 0600 	movt	r6, #8192	; 0x2000
+20000566:	1b76      	subs	r6, r6, r5
+20000568:	f000 f80a 	bl	20000580 <_init>
+2000056c:	10b6      	asrs	r6, r6, #2
+2000056e:	d006      	beq.n	2000057e <__libc_init_array+0x4e>
+20000570:	2400      	movs	r4, #0
+20000572:	f855 3024 	ldr.w	r3, [r5, r4, lsl #2]
+20000576:	3401      	adds	r4, #1
+20000578:	4798      	blx	r3
+2000057a:	42a6      	cmp	r6, r4
+2000057c:	d8f9      	bhi.n	20000572 <__libc_init_array+0x42>
+2000057e:	bd70      	pop	{r4, r5, r6, pc}
 
-20000594 <_init>:
-20000594:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-20000596:	bf00      	nop
-20000598:	bcf8      	pop	{r3, r4, r5, r6, r7}
-2000059a:	bc08      	pop	{r3}
-2000059c:	469e      	mov	lr, r3
-2000059e:	4770      	bx	lr
+20000580 <_init>:
+20000580:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+20000582:	bf00      	nop
+20000584:	bcf8      	pop	{r3, r4, r5, r6, r7}
+20000586:	bc08      	pop	{r3}
+20000588:	469e      	mov	lr, r3
+2000058a:	4770      	bx	lr
 
-200005a0 <_fini>:
-200005a0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-200005a2:	bf00      	nop
-200005a4:	bcf8      	pop	{r3, r4, r5, r6, r7}
-200005a6:	bc08      	pop	{r3}
-200005a8:	469e      	mov	lr, r3
-200005aa:	4770      	bx	lr
+2000058c <_fini>:
+2000058c:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+2000058e:	bf00      	nop
+20000590:	bcf8      	pop	{r3, r4, r5, r6, r7}
+20000592:	bc08      	pop	{r3}
+20000594:	469e      	mov	lr, r3
+20000596:	4770      	bx	lr
 
-200005ac <__frame_dummy_init_array_entry>:
-200005ac:	0485 2000                                   ... 
+20000598 <__frame_dummy_init_array_entry>:
+20000598:	0485 2000                                   ... 
 
-200005b0 <__do_global_dtors_aux_fini_array_entry>:
-200005b0:	0471 2000                                   q.. 
+2000059c <__do_global_dtors_aux_fini_array_entry>:
+2000059c:	0471 2000                                   q.. 

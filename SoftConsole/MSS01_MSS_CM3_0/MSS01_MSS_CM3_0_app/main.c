@@ -22,6 +22,7 @@ int main()
 	uint32_t* LED6 = (uint32_t*)LED6_ADDR;
 	uint32_t* LED7 = (uint32_t*)LED7_ADDR;
 	uint32_t* LED8 = (uint32_t*)LED8_ADDR;
+	/*
 	*LED1 = blue;
 	*LED2 = off;
 	*LED3 = blue;
@@ -30,8 +31,13 @@ int main()
 	*LED6 = off;
 	*LED7 = blue;
 	*LED8 = off;
+	*/
 
-	while(1){}
+	int i = 0;
+	while(1){
+		*LED1 = red;
+		for(i = 0; i < 100000; ++i){}
+	}
 
 
 

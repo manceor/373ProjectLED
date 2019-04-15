@@ -13,7 +13,7 @@ Opened an existing Libero design TOP.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 Wrote timing report to file: TOP_maxdelay_timing_report.txt
 
-The Report command succeeded ( 00:00:02 )
+The Report command succeeded ( 00:00:03 )
 Wrote timing report to file: TOP_mindelay_timing_report.txt
 
 The Report command succeeded ( 00:00:00 )

@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Apr 15 13:42:16 2019 ***************************************************************************
+                          Mon Apr 15 14:30:27 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
 File Name: C:\Users\mtstacho\Desktop\LED\designer\impl1\TOP.adb
 Design Name: TOP  Design State: compile
-Last Saved: Mon Apr 15 13:40:51 2019
+Last Saved: Mon Apr 15 14:19:06 2019
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Apr 15 13:42:13 2019:
+Source File(s) Imported on Mon Apr 15 14:30:24 2019:
         C:\Users\mtstacho\Desktop\LED\synthesis\TOP.edn
         C:\Users\mtstacho\Desktop\LED\component\work\TOP\TOP.pdc
 
@@ -412,7 +412,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:    566  Total:   4608   (12.28%)
+    Fabric                     Used:    473  Total:   4608   (10.26%)
     Fabric IO (W/ clocks)      Used:      1  Total:     94   (1.06%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -441,8 +441,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 329          | 329
-    SEQ     | 237          | 237
+    COMB    | 261          | 261
+    SEQ     | 212          | 212
 
 I/O Function:
 
@@ -474,7 +474,7 @@ Net information report:
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    238     CLK_NET       Net   : FAB_CLK
+    213     CLK_NET       Net   : FAB_CLK
                           Driver: MSS01_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
     67      INT_NET       Net   : LED_VERILOG_0/bit_counter[5]
@@ -487,22 +487,22 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_3
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_3
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_6
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_6
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_2
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_2
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_5
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_5
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_1
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_1
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_4
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_4
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_0
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_0
+    24      INT_NET       Net   : LED_VERILOG_0/color_249_e
+                          Driver: LED_VERILOG_0/color_249_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_273_e
+                          Driver: LED_VERILOG_0/color_273_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_297_e
+                          Driver: LED_VERILOG_0/color_297_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_321_e
+                          Driver: LED_VERILOG_0/color_321_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_345_e
+                          Driver: LED_VERILOG_0/color_345_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_369_e
+                          Driver: LED_VERILOG_0/color_369_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_393_e
+                          Driver: LED_VERILOG_0/color_393_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_225_e
+                          Driver: LED_VERILOG_0/color_225_e
     19      INT_NET       Net   : LED_VERILOG_0/bit_counter[3]
                           Driver: LED_VERILOG_0/bit_counter[3]
     18      INT_NET       Net   : LED_VERILOG_0/bit_counter_0[4]
@@ -511,22 +511,22 @@ High fanout nets in the post compile netlist:
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_3
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_3
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_6
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_6
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_2
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_2
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_5
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_5
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_1
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_1
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_4
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_4
-    24      INT_NET       Net   : LED_VERILOG_0/color_write_RNI6RK31_0
-                          Driver: LED_VERILOG_0/color_write_RNI6RK31_0
+    24      INT_NET       Net   : LED_VERILOG_0/color_249_e
+                          Driver: LED_VERILOG_0/color_249_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_273_e
+                          Driver: LED_VERILOG_0/color_273_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_297_e
+                          Driver: LED_VERILOG_0/color_297_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_321_e
+                          Driver: LED_VERILOG_0/color_321_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_345_e
+                          Driver: LED_VERILOG_0/color_345_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_369_e
+                          Driver: LED_VERILOG_0/color_369_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_393_e
+                          Driver: LED_VERILOG_0/color_393_e
+    24      INT_NET       Net   : LED_VERILOG_0/color_225_e
+                          Driver: LED_VERILOG_0/color_225_e
     19      INT_NET       Net   : LED_VERILOG_0/bit_counter[3]
                           Driver: LED_VERILOG_0/bit_counter[3]
     18      INT_NET       Net   : LED_VERILOG_0/bit_counter_0[4]
